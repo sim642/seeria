@@ -20,6 +20,44 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 	</script>
+	<style>
+		#steps li:before {
+			content: counter(listnumbering, decimal) ") ";
+			/*width: 1.5em;*/
+			padding-right: .3em;
+			font-size: 0.8em;
+			font-weight: bold;
+			display: inline-block;
+		}
+
+		#steps li.alg:before {
+			content: "A) ";
+		}
+
+		#steps .ui-bar-b:before {
+			display: none;
+		}
+
+ 		#steps li h3 {
+			display: inline;
+			font-size: 0.9em;
+			font-weight: normal;
+		}
+
+		#steps li p {
+			display: inline;
+			margin-bottom: 0em;
+			white-space: normal;
+			font-size: 0.8em;
+		}
+
+		#zitat {
+			font-size: 0.8em;
+			font-weight: normal;
+			margin: 0.3em;
+			white-space: normal;
+		}
+	</style>
 </head> 
 <body> 
 
@@ -46,7 +84,7 @@
 	</div>
 
 	<div data-role="footer">
-		<h1 id="zitat" style="font-size: 0.8em; font-weight: normal; margin: 0.3em; white-space: normal;"></h1>
+		<h1 id="zitat"></h1>
 	</div>
 </div>
 

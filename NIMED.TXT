@@ -1,5 +1,5 @@
 KEHAKRNT.SRY	Keha koordinaat
-LIIKMGRA.SRY	Liikumisgraafik
+Liikmgra.sry	Liikumisgraafik
 KIIRUSGR.SRY	Kiiruse graafik
 KIIRUSKE.SRY	Kiirus, keskmine kiirus
 VABALANG.SRY	Vaba langemine, vertikaalselt visatud keha liikumine
