@@ -1,0 +1,73 @@
+[Seeria]
+SeeriaNimi=Elektrivool gaasis
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+dU = ,\iU\i-telg,\iU\i-telg,V,,,#1
+dI = ,\iI\i-telg,\iI\i-telg,\sm\sA,,,#2
+W = ,ion. en.,\iW,eV,,,#3
+d = ,kaugus,\id,cm,,,#4
+
+UA = 3,Pinge punktis A,\iU\aA,V,,,dU
+IA = 4,Voolutugevus,\iI\aA,\sm\sA,,,dI*2
+RA = 5,Takistus,\iR\aA,M\sW,,,UA/IA
+q = 6,Gaasi läbinud laeng sekundis,\iq,\sm\sC,,,IA
+N = 7,Vastav elektronide arv,\iN,,1,,q/1.6E-13
+Ik = 8,Küllastusvoolu tugevus,\iI\ak,\sm\sA,,,5*dI
+Nk = 9,Elektronide arv sekundis,\iN\ak,,1,,Ik/1.6E-13
+Pr = 10,Rekombineerub olekus A,\i\sz,%,,,100*N/Nk
+K = 11,Ionisatsioonienergia,\iE\ai,J,1,,W*1.6E-19
+v = 12,Elektroni kiirus,\iv,m/s,1,,sqrt(2*K/9.1E-31)
+U = 13,Läbilöögipinge,\iU,V,,,9*dU
+E = 14,Elektrivälja tugevus,\iE,kV/m,,,0.1*U/d
+F = 15,Elektronile mõjuv jõud,\iF,N,1,,E*1.6E-19*1000
+a = 16,Elektroni liikumise kiirendus,\ia,m/s\y2,1,,F/9.1E-31
+t = 17,Aeg ühest põrkest järgmiseni,\it,s,1,,v/a
+s = 18,Elektroni vaba tee pikkus,\is,m,1,,a*sqr(t)/2
+
+[Andmed]
+;dU,dI,W,d
+
+100,2,5.4,15
+200,3,8.8,10
+500,4,8.3,12
+400,5,5.2,8
+300,1,7.6,14
+
+100,10,6.1,20
+200,25,8.1,6
+500,20,4.3,15
+400,40,9.8,10
+300,2,9.3,12
+
+100,3,7.7,8
+200,4,9.7,14
+500,5,6.2,20
+400,1,5.4,16
+300,10,8.8,15
+
+100,25,8.3,10
+200,20,5.2,12
+500,40,7.6,8
+400,2,6.1,14
+300,3,8.1,20
+
+100,4,4.3,6
+200,5,9.8,15
+500,1,9.3,10
+400,10,7.7,12
+300,25,9.7,8
+
+100,20,6.2,14
+200,40,5.4,20
+500,2,8.8,6
+400,3,8.3,15
+300,4,5.2,10
+
+100,5,7.6,12
+200,1,6.1,8
+500,10,8.1,14
+400,25,4.3,20
+300,20,9.8,6
+
+100,40,9.3,15

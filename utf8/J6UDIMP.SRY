@@ -1,0 +1,65 @@
+[Seeria]
+SeeriaNimi=Jõud ja impulss
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+ds = ,Jaotis,\sD\s\ih,cm,-1,,#1
+m = ,\im\i  =,\im,g,-1,,#2
+t = ,\it\i  =,\it,ms,,2,#3
+
+hA1 = 1,Punktide A ja 1 vaheline kaugus,\ih\aA1,m,,,ds*3/100
+t1 = 2,Lennuaeg punkti 1,\it\a1,s,,,sqrt(2*hA1/10)
+v1 = 3,Kiirus punktis 1,\iv\a1,m/s,,,t1*10
+p1 = 4,Kuuli impulss punktis 1,\ip\a1,kg·m/s,,,v1*m/1E3
+hA2 = 5,Punktide A ja 2 vaheline kaugus,\ih\aA2,m,,,ds*12/100
+v2 = 6,Kiirus punktis 2,\iv\a2,m/s,,,sqrt(2*10*hA2)
+t2 = 7,Lennuaeg punkti 2,\it\a2,s,,,sqrt(2*hA2/10)
+p2 = 8,Kuuli impulss punktis 2,\ip\a2,kg·m/s,,,v2*m/1E3
+dp = 9,Impulsi muut,\sD\s\ip,kg·m/s,,,p2-p1
+mg = 10,Raskusjõug,\img,N,,,10*m/1E3
+t12 = 11,Lennuaeg punktist 1 punkti 2,\it\a12,s,,,t2-t1
+Ft = 12,Jõuimpulss,\iFt,N·s,,,mg*t12
+hAB = 13,Punktide A ja B vaheline kaugus,\ih\aAB,m,,,ds*15/100
+vB = 14,Kuuli kiirus enne põrget,\iv\aB,m/s,,,sqrt(2*10*hAB)
+vB2 = 15,Kuuli kiirus pärast põrget,\iv'\aB,m/s,,,-vB
+Dp = 16,Kuuli impulsi muut põrkel,\sD\s\ip\a1,kg·m/s,,,(vB-vB2)*m/1E3
+Fp = 17,Keskmine jõud põrkel,\iF\ap,N,,,Dp/(t/1E3)
+
+[Andmed]
+;ds,m,t
+80,50,1.5
+50,150,2.5
+60,100,2
+40,200,3
+20,250,1.2
+10,300,2.8
+80,120,1
+50,50,2.4
+60,150,1.4
+40,100,1.5
+20,200,2.5
+10,250,2
+80,300,3
+50,120,1.2
+60,50,2.8
+40,150,1
+20,100,2.4
+10,200,1.4
+80,250,1.5
+50,300,2.5
+60,120,2
+40,50,3
+20,150,1.2
+10,100,2.8
+80,200,1
+50,250,2.4
+60,300,1.4
+40,120,1.5
+20,50,2.5
+10,150,2
+80,100,3
+50,200,1.2
+60,250,2.8
+40,300,1
+20,120,2.4
+10,50,1.4

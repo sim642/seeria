@@ -1,0 +1,73 @@
+[Seeria]
+SeeriaNimi=Termodünaamika 1. seadus
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+ds = ,Ruut,Ruut,cm,-1,,#1
+p = ,\ip\i  =,\ip,kPa,,,#2
+m = ,\im\i  =,\im,g,,2,#4
+
+d = 1,Silindri diameeter,\id,cm,,,3*ds
+r = 2,Põhja raadius,\ir,cm,,,d/2
+S = 3,Põhjapindala,\iS,cm²,,,3.1416*sqr(r)
+h1 = 4,Kolvi kõrgus 1. asendis,\ih\a1,cm,,,2*ds
+V1 = 5,Gaasi ruumala olekus 1,\iV\a1,cm³,,,S*h1
+h2 = 6,Kolvi kõrgus 2. asendis,\ih\a2,cm,,,5*ds
+V2 = 7,Gaasi ruumala olekus 2,\iV\a2,cm³,,,S*h2
+dV = 8,Ruumala muut,\sD\s\iV,cm³,,,V2-V1
+A = 10,Gaasi töö,\iA,J,,,(p*1E3)*(dV/1E6)
+A1 = 11,Välisjõudude töö,\iA',J,,,0-A
+M = 12,Gaasi molaarmass,\iM,g/mol,,,#5
+T1 = 13,Gaasi temperatuur olekus 1,\iT\a1,K,,,(p*1E3)*(V1/1E6)*M/(m*8.31)
+Ek1 = 14,Molekulide keskmine kineetiline energia,\iE\ak1,J,1,,1.38E-23*T1*3/2
+n = 15,Ainehulk,\sn,mol,,,m/M
+N = 16,Molekulide arv,\iN,,1,,n*6.02E23
+Eg1 = 17,Kõikide molekulide kineetiliste energiate summa,\iE\ag1,J,,,N*Ek1
+Ep = 18,Molekulide vastastikmõju potentsiaalne energia,\iE\ap,J,,,0
+E1 = 19,Gaasi siseenergia,\iE\a1,J,,,Eg1+Ep
+T2 = 20,Gaasi temperatuur olekus 2,\iT\a2,K,,,(p*1E3)*(V2/1E6)*M/(m*8.31)
+Ek2 = 21,Molekulide keskmine kineetiline energia,\iE\ak2,J,1,,1.38E-23*T2*3/2
+E2 = 22,Gaasi siseenergia olekus 2,\iE\a2,J,,,N*Ek2
+dE = 23,Gaasi siseenergia muut,\sD\s\iE,J,,,E2-E1
+Q = 24,Gaasi poolt saadud soojushulk,\iQ,J,,,A+dE
+dT = 25,Temperatuuri muut,\sD\s\iT,K,,,T2-T1
+cp = 26,Gaasi erisoojus,\ic\ap,J/(kg·K),,,Q/((m/1E3)*dT)
+
+[Andmed]
+;Ruut,p,Aine,m,M
+4,112,Krüptoon,3.9,84
+6,110,Neoon,3,20
+5,115,Argoon,3.5,40
+10,105,Heelium,2.5,4
+5,112,Krüptoon,7.5,84
+5,116,Neoon,1.8,20
+4,111,Argoon,1.7,40
+8,112,Heelium,1.3,4
+5,110,Krüptoon,7.6,84
+6,115,Neoon,3.1,20
+7,105,Argoon,8.8,40
+12,112,Heelium,4.5,4
+4,116,Krüptoon,4,84
+6,111,Neoon,3,20
+5,112,Argoon,3.3,40
+10,110,Heelium,2.5,4
+4,115,Krüptoon,4,84
+8,105,Neoon,6.8,20
+4,112,Argoon,1.7,40
+8,116,Heelium,1.4,4
+5,111,Krüptoon,7.5,84
+8,112,Neoon,7.1,20
+6,110,Argoon,5.7,40
+12,115,Heelium,4.6,4
+4,105,Krüptoon,3.7,84
+6,112,Neoon,3,20
+5,116,Argoon,3.5,40
+10,111,Heelium,2.6,4
+4,112,Krüptoon,3.9,84
+9,110,Neoon,9.9,20
+4,115,Argoon,1.8,40
+12,105,Heelium,4.5,4
+5,118,Krüptoon,8.1,84
+8,116,Neoon,7.5,20
+7,111,Argoon,9.3,40
+12,112,Heelium,4.5,4

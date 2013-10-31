@@ -1,0 +1,62 @@
+[Seeria]
+SeeriaNimi=Wilsoni kamber
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+ds = ,Ruut,Ruut,mm,-1,,#1
+B = ,\iB\i  =,\iB,T,,2,#2
+
+r1 = 1,Trajektoori kõverusraadius punktis 1,\ir\a1,mm,,,ds*5
+v1 = 2,Prootoni kiirus punktis 1,\iv\a1,m/s,1,,(r1/1E3)*B*1.6E-19/1.67E-27
+a1 = 3,Prootoni kiirendus,\ia\a1,m/s²,1,,sqr(v1)/(r1/1E3)
+F1 = 4,Prootonile mõjuv jõud,\iF\a1,N,1,,1.67E-27*a1
+r2 = 5,Trajektoori kõverusraadius punktis 2,\ir\a2,mm,,,ds*sqrt(20)
+v2 = 6,Prootoni kiirus punktis 2,\iv\a2,m/s,1,,(r2/1E3)*B*1.6E-19/1.67E-27
+E2 = 7,Kineetiline energia,\iE\a2,J,1,,1.67E-27*sqr(v2)/2
+m0 = 10,Algproduktide seisumasside summa,\im\a0,u,,6,1.00728+7.01436
+m1 = 11,Saaduste seisumasside summa,\im\a1,u,,6,2*4.00151
+dmu = 12,Massidefekt,\sD\s\im,u,,,m0-m1
+dm = 13,Massidefekt kilogrammides,\sD\s\im,kg,1,,dmu*1.66E-27
+dE = 14,Reaktsioonil vabanenud energia,\iE\ar,J,1,,dm*sqr(3E8)
+Ea = 15,\sa\s-osakese kineetiline energia,\iE\a\sa,J,1,,(dE+E2)/2
+va = 16,\sa\s-osakese kiirus,\iv\a\sa,m/s,1,,sqrt(2*Ea/(4*1.66E-27))
+pm = 17,Mitme protsendi võrra erineb \sa\s-osakese mass seisumassist,\sd,%,,,100*(1/sqrt(1-sqr(va/3E8))-1)
+
+[Andmed]
+;ds,B
+10,1.0
+5,2.0
+12,1.8
+15,1.5
+8,1.2
+6,1.4
+10,1.6
+5,1.0
+12,2.0
+15,1.8
+8,1.5
+6,1.2
+10,1.4
+5,1.6
+12,1.0
+15,2.0
+8,1.8
+6,1.5
+10,1.2
+5,1.4
+12,1.6
+15,1.0
+8,2.0
+6,1.8
+10,1.5
+5,1.2
+12,1.4
+15,1.6
+8,1.0
+6,2.0
+10,1.8
+5,1.5
+12,1.2
+15,1.4
+8,1.6
+6,1.0

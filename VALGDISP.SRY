@@ -1,0 +1,61 @@
+[Seeria]
+SeeriaNimi=Valguse dispersioon
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+a = ,\ia\i  =,\ia,mm,-1,,#1
+h = ,\ih\i  =,\ih,mm,-1,,#2
+AB = ,\iAB\i  =,\iAB,mm,-1,,#3
+BC = ,\iBC\i  =,\iBC,mm,-1,,#4
+
+fii = 1,Prisma murdev nurk \sj,\sj,°,,,180*atan(a/h)/3.1416
+delta = 3,Kaldenurk langemissihi suhtes \sd,\sd,°,,,180*asin(BC/AB)/3.1416
+fii1 = 4,Nurk AC ja pinnanormaali vahel,\sf,°,,,fii
+beeta = 6,Murdumisnurk \sb,\sb,°,,,fii+delta
+alfa = 7,Langemisnurk,\sa,°,,,fii1
+salfa = 8,Langemisnurga siinus,sin\sa,,,,sin(3.1416*alfa/180)
+sbeeta = 9,Murdumisnurga siinus,sin\sb,,,,sin(3.1416*beeta/180)
+n = 10,Prisma murdumisnäitaja,\in,,,4,sbeeta/salfa
+L = 11,Valguse lainepikkus,\sl,nm,,,216+13.423/(n-1.613888)
+nyy = 12,Valguslaine sagedus,\sn,Hz,1,,3E8/(L/1E9)
+v = 13,Valguse levimiskiirus prismas,\iv\ac,m/s,1,,3E8/n
+L1 = 14,Valguse lainepikkus prismas,\sl\a1,nm,,,1E9*v/nyy
+
+[Andmed]
+;a,h,AB,BC
+70,100,600,350
+120,180,800,450
+30,50,400,180
+100,150,700,400
+40,60,900,500
+110,160,500,280
+50,80,600,300
+140,200,800,470
+60,90,400,220
+80,120,700,400
+20,30,900,480
+150,240,500,250
+90,130,600,340
+70,110,800,420
+120,190,400,200
+30,60,700,250
+100,160,900,460
+40,70,500,220
+110,170,600,310
+50,90,750,320
+140,210,400,230
+60,100,700,330
+80,130,900,430
+20,40,500,190
+150,250,600,270
+90,150,800,370
+70,120,450,210
+120,200,700,330
+30,70,900,270
+100,180,500,210
+40,80,650,240
+110,200,800,320
+50,120,400,120
+140,250,700,290
+60,120,900,330
+80,150,500,200

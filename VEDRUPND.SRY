@@ -1,0 +1,62 @@
+[Seeria]
+SeeriaNimi=Vedrupendel
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+dt = ,\it\i-telg,\it\i-telg,s,,2,#1
+dx = ,\ix\i-telg,\ix\i-telg,cm,,2,#2
+t = ,\it\i  =,\it,s,,2,#3
+m = ,\im\i  =,\im,kg,,2,#4
+
+T = 3,Võnkeperiood,\iT,s,,,12*dt
+X = 4,Võnkeamplituud,\iX,cm,,,4*dx
+n = 5,Võnkesagedus,\sn,Hz,,,1/T
+w = 6,Ringsagedus,\sw,rad/s,,,n*2*3.1416
+xt = 8,Hälva ajahetkel \it,\ix\at,cm,,,X*sin(w*t)
+st = 9,Keha poolt läbitud teepikkus hetkeks \it,\is\at,cm,,,X+(X-xt)
+k = 10,Vedru jäikus,\ik,N/m,,,m*sqr(w)
+Ep = 11,Vedru maksimaalne potentsiaalne energia,\iE\ap,J,,,k*sqr(X/100)/2
+E = 12,Pendli mehaaniline koguenergia,\iE,J,,,Ep
+vm = 13,Keha liikumise maksimaalne kiirus,\iv\am,m/s,,,sqrt(2*E/m)
+Fe = 14,Kehale mõjuv suurim elastsusjõud,\iF\ae,N,,,k*X/100
+a = 15,Keha suurim kiirendus,\ia,m/s²,,,Fe/m
+tkh = 16,Kiiruse maksimumi hilinemine hälbe maksimumi suhtes,\it\akh,s,,,T/4
+
+[Andmed]
+;dt,dx,t,m
+0.1,1.2,0.5,1.5
+0.05,0.8,0.25,0.5
+0.2,3,1,2.2
+0.15,1.5,0.75,2.0
+0.25,0.6,1.25,2.5
+0.4,1,2,7.0
+0.3,0.5,1.5,3.6
+0.1,0.4,0.5,1.4
+0.05,1.2,0.25,0.4
+0.2,0.8,1,1.5
+0.15,3,0.75,1.1
+0.25,1.5,1.25,2.3
+0.4,0.6,2,5.9
+0.3,1,1.5,3.4
+0.1,0.5,0.5,3.3
+0.05,0.4,0.25,0.9
+0.2,1.2,1,1.7
+0.15,0.8,0.75,1.0
+0.25,3,1.25,2.8
+0.4,1.5,2,6.5
+0.3,0.6,1.5,3.4
+0.1,1,0.5,2.0
+0.05,0.5,0.25,0.8
+0.2,0.4,1,7.0
+0.15,1.2,0.75,3.6
+0.25,0.8,1.25,2.6
+0.4,3,2,6.0
+0.3,1.5,1.5,3.4
+0.1,0.6,0.5,0.5
+0.05,1,0.25,0.7
+0.2,0.5,1,2.0
+0.15,0.4,0.75,2.5
+0.25,1.2,1.25,7.0
+0.4,0.8,2,5.9
+0.3,3,1.5,3.5
+0.1,1.5,0.5,1.0

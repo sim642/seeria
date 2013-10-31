@@ -1,0 +1,71 @@
+[Seeria]
+SeeriaNimi=Rõhk vedelikus. Üleslükkejõud
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+ds = ,Ruut,Ruut,cm,,2,#1
+rv = ,\sr\s\av\a  =,\sr\s\av,kg/m³,,,#2
+rk = ,\sr\s\ak\a  =,\sr\s\ak,kg/m³,,,#3
+a = ,\ia\i  =,\ia,cm,-1,,#4
+
+hv = 1,Vedelikusamba kõrgus,\ih\av,cm,,,7*ds
+pv = 2,Vedeliku rõhk anuma põhjale,\ip\av,Pa,,,rv*10*hv/100
+da = 3,Anuma põhja läbimõõt,\id\aa,cm,,,5*ds
+ra = 4,Anuma põhja raadius,\ir\aa,cm,,,da/2
+Sa = 5,Anuma põhja pindala,\iS\aa,cm²,,,3.1416*sqr(ra)
+Fa = 6,Vedeliku rõhumisjõud anuma põhjale,\iF\aa,N,,,pv*Sa/1E4
+h1 = 7,Vedelikusamba kõrgus klotsi alumise tahu kohal,\ih\a1,cm,,,6*ds
+p1 = 8,Vedeliku rõhk klotsi alumisele tahule,\ip\a1,Pa,,,rv*10*h1/100
+S1 = 9,Alumise tahu pindala,\iS\a1,cm²,,,3*ds*a
+F1 = 10,Rõhumisjõud alumisele tahule,\iF\a1,N,,,p1*S1/1E4
+h2 = 12,Vedelikusamba kõrgus klotsi ülemise tahu kohal,\ih\a2,cm,,,2*ds
+p2 = 13,Vedeliku rõhk klotsi ülemisele tahule,\ip\a2,Pa,,,rv*10*h2/100
+F2 = 14,Rõhumisjõud ülemisele tahule,\iF\a2,N,,,p2*S1/1E4
+Fy = 16,Üleslükkejõud,\iF\aü,N,,,F1-F2
+hk = 17,Klotsi kõrgus,\ih\ak,cm,,,4*ds
+Vk = 18,Klotsi ruumala,\iV\ak,cm³,,,hk*S1
+mv = 19,Väljatõrjutud vedeliku mass,\im\av,kg,,,rv*Vk/1E6
+Pv = 20,Väljatõrjutud vedeliku kaal,\iP\av,N,,,mv*10
+mk = 21,Keha mass,\im\ak,kg,,,rk*Vk/1E6
+Pk = 22,Kehale mõjuv raskusjõud,\im\ak\ag,N,,,mk*10
+Fe = 23,Elastsusjõud nööris,\iF\ae,N,,,Pk-Fy
+Fy1 = 24,"Üleslükkejõud, kui veerand keha on vedelikust väljas",\iF\aü1,N,,,Fy*3/4
+
+[Andmed]
+;ds,rv,rk,a
+2,790,2700,4
+0.5,740,10500,1
+1,880,7190,2
+4,1000,19300,8
+2.5,850,8900,5
+1.5,940,7870,3
+3,870,7280,6
+2,710,7130,4
+0.5,790,8960,1
+1,740,2700,2
+4,880,10500,8
+2.5,1000,7190,5
+1.5,850,19300,3
+3,940,8900,6
+2,870,7870,4
+0.5,710,7280,1
+1,790,7130,2
+4,740,8960,8
+2.5,880,2700,5
+1.5,1000,10500,3
+3,850,7190,6
+2,940,19300,4
+0.5,870,8900,1
+1,710,7870,2
+4,790,7280,8
+2.5,740,7130,5
+1.5,880,8960,3
+3,1000,2700,6
+2,850,10500,4
+0.5,940,7190,1
+1,870,19300,2
+4,710,8900,8
+2.5,790,7870,5
+1.5,740,7280,3
+3,880,7130,6
+2,1000,8960,4

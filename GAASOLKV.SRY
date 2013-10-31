@@ -1,0 +1,63 @@
+[Seeria]
+SeeriaNimi=Gaasi olekuvõrrand
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+dV = ,\iV\i-telg,\iV\i-telg,dm³,-1,,#1
+dp = ,\ip\i-telg,\ip\i-telg,MPa,,2,#2
+T1 = ,\iT\a1\n  =,\iT\a1,K,,,#3
+t3 = ,\it\a3\n  =,\it\a3,°C,,,#4
+V3 = ,\iV\a3\n  =,\iV\a3,dm³,-1,,#5
+
+V1 = 3,Ruumala \iV\a1,\iV\a1,dm³,,,dV*2
+V2 = 4,Ruumala \iV\a2,\iV\a2,dm³,,,dV*4
+p1 = 5,Rõhk \ip\a1,\ip\a1,MPa,,,dp*2
+p2 = 6,Rõhk \ip\a2,\ip\a2,MPa,,,dp*3
+T2 = 7,Temperatuur olekus 2,\iT\a2,K,,,T1*V2*p2/(V1*p1)
+t2 = 8,Temperatuur olekus 2 (°C),\it\a2,°C,,,T2-273
+T3 = 9,Temperatuur olekus 3,\iT\a3,K,,,t3+273
+p3 = 10,Gaasi rõhk olekus 3,\ip\a3,MPa,,,p1*V1*T3/(T1*V3)
+T4 = 12,Gaasi temperatuur pärast jahutamist,\iT\a4,K,,,T3-300
+p4 = 13,Gaasi rõhk pärast paisumist,\ip\a4,MPa,,,p3*0.6
+V4 = 14,Gaasi ruumala,\iV\a4,dm³,,,V1*p1*T4/(T1*p4)
+nT12 = 15,Mitu korda muutus temperatuur protsessis 1-2,\in\aT12,,,,T2/T1
+nE12 = 16,Mitu korda muutus siseenergia protsessis 1-2,\in\aE12,,,,nT12
+
+[Andmed]
+;dV,dp,T1,t3,V3
+5,0.2,290,597,15
+4,0.5,320,687,12
+2,0.4,270,537,6
+1,1,280,567,3
+20,0.1,300,627,60
+15,0.2,330,717,45
+10,0.5,350,777,30
+5,0.4,310,657,15
+4,1,340,747,12
+2,0.1,290,597,6
+1,0.2,320,687,3
+20,0.5,270,537,60
+15,0.4,280,567,45
+10,1,300,627,30
+5,0.1,330,717,15
+4,0.2,350,777,12
+2,0.5,310,657,6
+1,0.4,340,747,3
+20,1,290,597,60
+15,0.1,320,687,45
+10,0.2,270,537,30
+5,0.5,280,567,15
+4,0.4,300,627,12
+2,1,330,717,6
+1,0.1,350,777,3
+20,0.2,310,657,60
+15,0.5,340,747,45
+10,0.4,290,597,30
+5,1,320,687,15
+4,0.1,270,537,12
+2,0.2,280,567,6
+1,0.5,300,627,3
+20,0.4,330,717,60
+15,1,350,777,45
+10,0.1,310,657,30
+5,0.2,340,747,15

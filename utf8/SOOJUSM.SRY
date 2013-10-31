@@ -1,0 +1,60 @@
+[Seeria]
+SeeriaNimi=Soojusmasin
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+dV = ,\iV\i-telg,\sD\s\iV,cm³,-1,,#1
+dp = ,\ip\i-telg,\sD\s\ip,kPa,-1,,#2
+m = ,\im\i  =,\im,mg,-1,,#3
+t = ,\it\i  =,\it,min,-1,,#4
+f = ,\if\i  =,\if,Hz,-1,,#5
+
+dS = 3,Ühe ristküliku pindala graafikul,\sD\s\iS,Pa·m³,,,dp*dV/1E3
+A1 = 4,Väliste jõudude töö gaasi kokkusurumisel,\iA\a1,J,,,dS*15
+A2 = 5,Gaasi töö adiabaatilisel paisumisel,\iA\a2,J,,,dS*39
+A = 6,Kasulik töö tsükli jooksul,\iA,J,,,A2-A1
+Q = 7,Saadud soojushulk,\iQ,J,,,m*46
+eeta = 8,Kasutegur,\sh,%,,,100*A/Q
+N1 = 9,Pöörete arv ühe tsükli jooksul,\iN\a1,,,,2
+N = 10,Tsüklite arv,\iN,,3,,t*60*f/N1
+mb = 11,Bensiinikulu,\im\ab,kg,,,N*m/1E6
+Vb = 12,Bensiinikulu liitrites,\iV\ab,l,,,mb/0.72
+
+[Andmed]
+;dV,dp,m,t,f
+30,200,14,30,60
+40,190,15,60,50
+50,180,20,15,40
+60,170,24,30,50
+80,160,25,15,60
+25,150,7,10,40
+15,200,6,45,30
+30,190,11,10,45
+40,180,16,30,55
+50,170,18,50,65
+60,160,19,15,35
+80,150,21,30,60
+25,200,9,15,50
+15,190,5,10,40
+30,180,12,45,50
+40,170,11,10,60
+50,160,13,30,40
+60,150,16,60,30
+80,200,25,15,45
+25,190,21,30,55
+15,180,6,15,65
+30,170,10,10,35
+40,160,12,45,60
+50,150,17,10,50
+60,200,22,30,40
+80,190,27,60,50
+25,180,9,15,60
+15,170,4,30,40
+30,160,11,15,30
+40,150,13,10,45
+50,200,18,45,55
+60,190,20,10,65
+80,180,24,30,35
+25,170,8,40,60
+15,160,4,15,50
+30,150,9,30,40

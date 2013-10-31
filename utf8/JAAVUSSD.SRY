@@ -1,0 +1,69 @@
+[Seeria]
+SeeriaNimi=Jäävusseadused
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+m1 = ,\im\a1\n  =,\im\a1,g,-1,,#1
+v1 = ,\iv\a1\n  =,\iv\a1,m/s,,2,#2
+k = ,\ik\i  =,\ik,kN/m,,2,#3
+m2 = ,\im\a2\n  =,\im\a2,g,-1,,#4
+myy = ,\sm\s  =,\sm,,,2,#5
+l = ,\il\i  =,\il,m,,2,#6
+
+E1 = 1,Kineetiline energia enne tabamust,\iE\a1,J,,,(m1/1E3)*sqr(v1)/2
+x = 2,Vedru kokkusurutus enne lasku,\ix,mm,,,1E3*sqrt(2*E1/(k*1E3))
+h = 3,Kuuli lennukõrgus vertikaalsel tulistamisel,\ih,m,,,sqr(v1)/(2*10)
+p1 = 4,Kuuli impulss enne tabamust,\ip\a1,kg·m/s,,,(m1/1E3)*v1
+pk = 5,Kuuli ja klotsi impulss pärast tabamust,\ip\ak,kg·m/s,,,p1
+mk = 6,Kuuli ja klotsi mass kokku,\im\ak,g,,,m1+m2
+vk = 7,Klotsi kiirus pärast tabamust,\iv\ak,m/s,,,pk/(mk/1E3)
+Ek = 8,Kuuli ja klotsi energia,\iE\ak,J,,,(mk/1E3)*sqr(vk)/2
+dE = 9,Energiakadu põrkel,\sD\s\iE,J,,,E1-Ek
+pdE = 10,Siseenergiaks läinud energia osakaal,\sk,%,,,100*dE/E1
+Fh = 11,Hõõrdejõud süsteemi liikumisel,\iF\ah,N,,,(mk/1E3)*10*myy
+Ah = 12,Hõõrdejõudude töö,\iA\ah,J,,,Ek
+sk = 13,Klotsi libisemise kaugus,\is\ak,m,,,Ah/Fh
+ak = 14,Klotsi liikumise kiirendus,\ia\ak,m/s²,,,Fh/(mk/1E3)
+tk = 15,Klotsi liikumise aeg,\it\ak,s,,,vk/ak
+hk = 16,Klotsi tõusu kõrgus nööri otsas,\ih\ak,m,,,Ek/(10*mk/1E3)
+alfa = 17,Nööri kaldenurk vertikaalist,\sa,°,,,180*acos((l-hk)/l)/3.1416
+v2 = 18,"Klotsi vastuliikumise kiirus, mis jätaks ta pärast põrget paigale",\iv\a2,m/s,,,m1*v1/m2
+
+[Andmed]
+;m1,v1,k,m2,myy,l
+55,3.5,7.4,85,0.12,2.5
+40,4.5,8.2,65,0.15,2.0
+75,2.0,7.0,70,0.22,1.5
+60,3.0,8.4,75,0.14,2.4
+45,4.0,6.8,95,0.20,1.8
+30,5.0,8.0,80,0.18,2.2
+70,2.5,7.6,85,0.16,1.4
+55,3.2,7.2,65,0.12,1.0
+40,3.5,7.8,70,0.25,1.2
+75,4.5,7.4,75,0.30,2.5
+60,2.0,8.2,95,0.28,1.3
+45,3.0,7.0,80,0.12,1.5
+30,4.0,8.4,85,0.15,2.4
+70,5.0,6.8,65,0.34,2.6
+55,2.5,8.0,70,0.14,2.2
+40,3.2,7.6,75,0.20,1.4
+75,3.5,7.2,95,0.18,1.0
+60,4.5,7.8,80,0.19,1.6
+45,2.0,7.4,85,0.10,1.4
+30,3.0,8.2,65,0.25,2.0
+70,4.0,7.0,70,0.30,1.5
+55,5.0,8.4,75,0.28,2.4
+40,2.5,6.8,95,0.12,1.8
+75,3.2,8.0,80,0.15,2.2
+60,3.5,7.6,85,0.22,1.4
+45,4.5,7.2,65,0.20,1.6
+30,2.0,7.8,70,0.20,1.1
+70,3.0,7.4,75,0.18,2.5
+55,4.0,8.2,95,0.16,2.0
+40,5.0,7.0,80,0.14,1.5
+75,2.5,8.4,85,0.25,2.4
+60,3.2,6.8,65,0.30,1.8
+45,3.5,8.0,70,0.28,2.2
+30,4.5,7.6,75,0.12,1.4
+70,2.0,7.2,95,0.15,1.0
+55,3.0,7.8,80,0.22,1.2

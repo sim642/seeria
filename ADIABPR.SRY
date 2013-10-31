@@ -1,0 +1,66 @@
+[Seeria]
+SeeriaNimi=Adiabaatiline protsess
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+dV = ,\iV\i-telg,\sD\s\iV,cm³,-1,,#1
+dp = ,\ip\i-telg,\sD\s\ip,kPa,-1,,#2
+tA = ,\it\aA\n  =,\it\aA,°C,-1,,#3
+
+VA = 4,\iV\aA\n  =,\iV\aA,cm³,,,dV*12
+pA = 5,\ip\aA\n  =,\ip\aA,kPa,,,dp*2
+VB = 6,\iV\aB\n  =,\iV\aB,cm³,,,dV*4
+pB = 7,\ip\aB\n  =,\ip\aB,kPa,,,dp*12
+dS = 8,Ühe ruudu pindala,\sD\s\iS,Pa·m³,,,dp*dV/1E3
+NS = 9,Graafikualuste ruutude arv,\iN\aS,,,,37
+A = 10,Gaasi töö,\iA,J,,,0-NS*dS
+Q = 11,Gaasi poolt saadud soojushulk,\iQ,J,,,0
+dE = 12,Gaasi siseenergia muut,\sD\s\aE,J,,,Q-A
+TA = 13,Gaasi temperatuur olekus A,\iT\aA,K,,,tA+273
+n = 14,Gaasi ainehulk,\sn,mol,,,(pA*VA/1E3)/(TA*8.31)
+N = 15,Gaasimolekulide arv,\iN,,1,,n*6.02E23
+E0 = 16,Molekuli keskmine kineetiline energia olekus A,\iE\a0A,J,1,,TA*1.38E-23*3/2
+Ek = 17,Kõikide kolekulide kineetiline energia,\iE\ak,J,,,N*E0
+Ep = 18,Molekulide vastasmõju energia,\iE\ap,J,,,0
+EA = 19,Gaasi siseenergia,\iE\aA,J,,,Ek+Ep
+EB = 20,Gaasi siseenergia olekus B,\iE\aB,J,,,EA+dE
+TB = 21,Temperatuur olekus B,\iT\aB,K,,,2*EB/(3*n*8.31)
+
+[Andmed]
+;dV,dp,tA
+50,15,27
+40,50,7
+20,10,-3
+10,75,-13
+50,30,37
+40,60,17
+20,25,-23
+10,40,27
+50,20,7
+40,15,-3
+20,50,-13
+10,10,37
+50,75,17
+40,30,-23
+20,60,27
+10,25,7
+50,40,-3
+40,20,-13
+20,15,37
+10,50,17
+50,10,-23
+40,75,27
+20,30,7
+10,60,-3
+50,25,-13
+40,40,37
+20,20,17
+10,15,-23
+50,50,27
+40,10,7
+20,75,-3
+10,30,-13
+50,60,37
+40,25,17
+20,40,-23
+10,20,27

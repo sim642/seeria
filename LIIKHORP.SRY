@@ -1,0 +1,64 @@
+[Seeria]
+SeeriaNimi=Liikumine horisontaalsel pinnal
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+ds = ,Ruut,Ruut,cm,,2,#1
+b = ,\ib\i  =,\ib,cm,,2,#2
+r = ,\sr\s  =,\sr,kg/m³,,,#4
+F = ,\iF\i  =,\iF,N,,2,#5
+myy = ,\sm\s  =,\sm,,,,#7
+
+ka = 2,Klotsi pikkus,\ia,cm,,,ds*6
+kc = 3,Klotsi kõrgus,\ic,cm,,,ds*2
+V = 4,Klotsi ruumala,\iV,cm³,,,ka*kc*b
+m = 5,Klotsi mass,\im,kg,,,r*V/1E6
+P = 6,Klotsile mõjuv raskusjõud,\iF\ar,N,,,m*10
+alfa = 8,Nurk veojõu ja liikumissuuna vahel,\sa,°,,,180*atan(2/6)/3.1416
+Fy = 9,Jõu \iF\ay\n väärtus,\iF\ay,N,,,F*sin(3.1416*alfa/180)
+N = 10,Toereaktsioon,\iN,N,,,P-Fy
+Fh = 11,Hõõrdejõud,\iF\ah,N,,,N*myy
+Fx = 12,Jõu \iF\ax\n väärtus,\iF\ax,N,,,F*cos(3.1416*alfa/180)
+Fres = 13,Resultantjõud,\iF\ares,N,,,Fx-Fh
+a = 14,Klotsi kiirendus,\ia,m/s²,,,Fres/m
+F2 = 15,"Veojõud, mis veaks keha ühtlaselt",\iF\a2,N,,,myy*m*10/(cos(3.1416*alfa/180)+myy*sin(3.1416*alfa/180))
+a2 = 16,"Klotsi kiirendus, kui veojõud lakkab",\ia\a2,m/s²,,,myy*10
+
+[Andmed]
+;ds,b,Aine,r,F,Alus,myy
+3.2,4.4,Jää,900,1.6,Jää,0.028
+3.4,5.6,Puit,500,1.3,Jää,0.035
+3,4.8,Teras,7700,13,Jää,0.021
+2.4,6,Malm,6900,12,Malm,0.15
+2,6.8,Pronks,8800,14,Malm,0.21
+2.8,7.2,Puit,500,2.2,Malm,0.41
+2.2,6.4,Raud,7800,13,Malm,0.18
+3.2,5,Teras,7700,20,Malm,0.13
+2.6,5.2,Pronks,8800,18,Pronks,0.2
+3,4.4,Raud,7800,17,Pronks,0.18
+3.6,5.6,Puit,500,2.5,Puit,0.33
+2,7.2,Raud,7800,11,Raud,0.14
+2.8,6,Jää,900,1.7,Jää,0.028
+2.2,6.8,Jää,900,1.2,Puit,0.035
+3.2,5.2,Jää,900,1.9,Teras,0.021
+2.6,6.4,Malm,6900,16,Malm,0.15
+3,5,Malm,6900,18,Pronks,0.21
+2.4,5.2,Malm,6900,16,Puit,0.41
+2,8,Malm,6900,12,Raud,0.18
+2.8,5.6,Malm,6900,15,Teras,0.13
+2.2,6.4,Pronks,8800,16,Pronks,0.2
+3.2,4,Pronks,8800,20,Raud,0.18
+3.6,6.8,Puit,500,3.1,Puit,0.33
+3,5.2,Raud,7800,19,Raud,0.14
+2.4,6.4,Jää,900,1.3,Jää,0.028
+3.4,7.2,Puit,500,1.7,Jää,0.035
+2.8,5.2,Teras,7700,12,Jää,0.021
+2.2,6.8,Malm,6900,12,Malm,0.15
+3.2,4.8,Pronks,8800,25,Malm,0.21
+3.6,4.8,Puit,500,2.4,Malm,0.41
+3,4,Raud,7800,16,Malm,0.18
+2.4,6.8,Teras,7700,15,Malm,0.13
+2,7.6,Pronks,8800,15,Pronks,0.2
+2.8,6.4,Raud,7800,22,Pronks,0.18
+3.2,5.6,Puit,500,2,Puit,0.33
+3.2,5.2,Raud,7800,21,Raud,0.14

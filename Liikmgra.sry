@@ -1,0 +1,64 @@
+[Seeria]
+SeeriaNimi=Liikumisgraafik
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+dt = ,\it\i-telg,\it\i-telg,s,-1,,#1
+dx = ,\ix\i-telg,\ix\i-telg,m,-1,,#2
+t = ,\it\i  =,\it,s,,2,#3
+
+x10 = 3,1. keha algkoordinaat,\ix\a10,m,,,0-dx
+x11 = 4,1. keha lõppkoordinaat,\ix\a11,m,,,2*dx
+s1 = 5,1. keha nihe,\is\a1,m,,,x11-x10
+t1 = 6,1. keha liikumise aeg,\it\a1,s,,,6*dt
+v1 = 7,1. keha kiirus,\iv\a1,m/s,,,s1/t1
+xt = 9,1. keha koordinaat hetkel \it,\ix\at,m,,,v1*t+x10
+x20 = 10,2. keha algkoordinaat,\ix\a20,m,,,4*dx
+x21 = 11,2. keha lõppkoordinaat,\ix\a21,m,,,0
+s2 = 12,2. keha nihe,\is\a2,m,,,x21-x20
+t2 = 13,2. keha liikumise aeg,\it\a2,s,,,5*dt
+v2 = 14,2. keha kiirus,\iv\a2,m/s,,,s2/t2
+t12 = 16,Kehade kohtumise aeg,\it\a12,s,,,(x20-x10)/(v1-v2)
+x12 = 17,Kehade kohtumise koht,\ix\a12,m,,,v1*t12+x10
+s1k = 18,Esimese keha nihe kohtumisel,\is\a1k,m,,,v1*t12
+v12 = 19,Kehade lähenemise kiirus,\iv\a12,m/s,,,v1-v2
+v12e = 20,Kehade eemaldumise kiirus,\iv\a12e,m/s,,,v12
+
+[Andmed]
+;dt,dx,t
+2,4,1.5
+4,5,2.5
+5,10,3
+10,15,6
+15,20,10
+20,25,15
+25,4,20
+2,5,2.5
+4,10,6
+5,15,7
+10,20,12
+15,25,20
+20,4,25
+25,5,30
+2,10,5.5
+4,15,9
+5,20,12
+10,25,22
+15,4,40
+20,5,45
+25,10,60
+2,15,7
+4,20,15
+5,25,16
+10,4,35
+15,5,50
+20,10,70
+25,15,80
+2,20,9
+4,25,18
+5,4,24
+10,5,45
+15,10,70
+20,15,90
+25,20,120
+2,25,11

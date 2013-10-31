@@ -1,0 +1,66 @@
+[Seeria]
+SeeriaNimi=Kiirus, keskmine kiirus
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+dt = ,Aja telg,\it\i-telg,s,-1,,#1
+dv = ,Kiiruse telg,\iv\i-telg,m/s,-1,,#2
+
+vA = 3,Kiireneva liikumise algkiirus,\iv\aA,m/s,,,2*dv
+vB = 4,Lõppkiirus \iv\aB,\iv\aB,m/s,,,6*dv
+tAB = 5,Liikumise aeg,\it\aAB,s,,,2*dt
+vAB = 6,Keskmine kiirus,\iv\aAB,m/s,,,(vA+vB)/2
+sAB = 8,Läbitud teepikkus,\is\aAB,m,,,vAB*tAB
+SAB = 9,Trapetsi OABF alune pindala,\iS\aOABF,s·m/s,,,8*dt*dv
+vBC = 10,Ühtlase liikumise kiirus,\iv\aBC,m/s,,,6*dv
+tBC = 11,Liikumise aeg,\it\aBC,s,,,5*dt
+sBC = 12,Läbitud teepikkus,\is\aBC,m,,,vBC*tBC
+SBC = 13,Graafiku BC alune pindala,\iS\aBCEF,s·m/s,,,30*dt*dv
+vC = 14,Aeglustuva liikumise algkiirus,\iv\aC,m/s,,,6*dv
+vD = 15,Lõppkiirus \iv\aD,\iv\aD,m/s,,,0
+tCD = 16,Liikumise aeg,\it\aCD,s,,,dt
+vCD = 17,Keskmine kiirus,\iv\aCD,m/s,,,(vC+vD)/2
+sCD = 19,Läbitud teepikkus,\is\aCD,m,,,vCD*tCD
+SCD = 20,Kolmnurga CDE pindala,\iS\aCDE,s·m/s,,,3*dt*dv
+sABCD = 21,Kogu läbitud teepikkus,\is,m,,,sAB+sBC+sCD
+tABCD = 22,Kogu liikumise aeg,\it,s,,,tAB+tBC+tCD
+vABCD = 23,Kogu liikumise keskmine kiirus,\iv\ak,m/s,,,sABCD/tABCD
+
+[Andmed]
+;dt,dv
+2,4
+4,5
+5,10
+10,20
+15,4
+20,5
+25,10
+30,20
+40,4
+2,5
+4,10
+5,20
+10,4
+15,5
+20,10
+25,20
+30,4
+40,5
+2,10
+4,20
+5,4
+10,5
+15,10
+20,20
+25,4
+30,5
+40,10
+2,20
+4,4
+5,5
+10,10
+15,20
+20,4
+25,5
+30,10
+40,20

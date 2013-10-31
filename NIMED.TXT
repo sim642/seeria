@@ -1,0 +1,69 @@
+KEHAKRNT.SRY	Keha koordinaat
+LIIKMGRA.SRY	Liikumisgraafik
+KIIRUSGR.SRY	Kiiruse graafik
+KIIRUSKE.SRY	Kiirus, keskmine kiirus
+VABALANG.SRY	Vaba langemine, vertikaalselt visatud keha liikumine
+LIIKRSKJ.SRY	Liikumine raskusjõu mõjul
+DYNAMOMT.SRY	Dünamomeeter. Keha kaal
+H66RDL.SRY	Hõõrdumisega liikumine
+LIIKHORP.SRY	Liikumine horisontaalsel pinnal
+LIIKKLDP.SRY	Liikumine kaldpinnal
+SEOTUDKL.SRY	Seotud kehade liikumine
+KEHATK.SRY	Keha tasakaal
+POORLTK.SRY	Pöörlemisteljega keha tasakaal
+J6UDIMP.SRY	Jõud ja impulss
+IMPULSJS.SRY	Impulsi jäävuse seadus
+JAAVUSSD.SRY	Jäävusseadused
+YHTLRING.SRY	Ühtlane ringliikumine
+IMPMOM.SRY	Impulsimoment
+VEDRUPND.SRY	Vedrupendel
+MATPENDL.SRY	Matemaatiline pendel
+Laine.sry	Laine
+R6HKVEDL.SRY	Rõhk vedelikus. Üleslükkejõud
+SOOJTSKV.SRY	Soojusliku tasakaalu võrrand
+AGREGAOM.SRY	Agregaatolekute muutumine
+GAASAHLK.SRY	Gaas. Ainehulk
+TAHKEKH.SRY	Tahke keha
+GAASROHK.SRY	Gaasi rõhk
+GAASOLKV.SRY	Gaasi olekuvõrrand
+GAASMKRP.SRY	Gaasi makro- ja mikroparameetrid
+ISOTERMP.SRY	Isotermiline protsess
+ISOBAARP.SRY	Isobaariline protsess
+ISOHOORP.SRY	Isohooriline protsess
+RINGPROT.SRY	Ringprotsess
+TERMD1S.SRY	Termodünaamika 1. seadus
+ADIABPR.SRY	Adiabaatiline protsess
+SOOJUSM.SRY	Soojusmasin
+OHUROHK.SRY	Õhurõhk. Õhuniiskus
+PINDPINV.SRY	Pindpinevus. Kapillaarsus
+ELAENGV.SRY	Elektrilaeng, elektriväli
+TOOELV.SRY	Töö elektriväljas
+KONDENSR.SRY	Kondensaator
+JUHTIDEY.SRY	Juhtide ühendusviisid
+TAKVOOLS.SRY	Takistus. Voolu soojuslik toime
+VOOLUAES.SRY	Vooluallika elektromotoorjõud ja sisetakistus
+ELEKTMET.SRY	Elektrivool metallides
+ELEKTROL.SRY	Elektrolüüs
+ELVOOLGS.SRY	Elektrivool gaasis
+ELTORU.SRY	Elektronkiirte toru
+TRIOOD.SRY	Vaakumtriood
+TRANSIST.SRY	Transistor
+VOOLURMM.SRY	Vooluraam magnetväljas
+MASSISPK.SRY	Massispektromeeter
+ELEKTVV.SRY	Elektromagnetiline vabavõnkumine
+VAHLDGNR.SRY	Vahelduvvoolu generaator
+VAHELDVV.SRY	Vahelduvvool
+OHMSVVR.SRY	Ohmi seadus vahelduvvooluringis
+TASAPGL.SRY	Tasapeegel
+VALGMRD.SRY	Valguse murdumisseadus
+KOONDLTS.SRY	Koondav lääts
+VALGDISP.SRY	Valguse dispersioon
+VALGDFRI.SRY	Valguse difraktsioon ja interferents
+FOTOEFKT.SRY	Fotoefekt
+BOHRATOM.SRY	Bohri aatomiteooria
+RADIOLAG.SRY	Radioaktiivne lagunemine
+SEOSEENG.SRY	Seoseenergia
+WILSONIK.SRY	Wilsoni kamber
+AHELRKTS.SRY	Ahelreaktsioon
+TERMOTM.SRY	Termotuumareaktsioon
+GRAVITY.SRY	Gravitatsioon

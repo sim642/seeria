@@ -1,0 +1,64 @@
+[Seeria]
+SeeriaNimi=Ühtlane ringliikumine
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+ds = ,Ruut,Ruut,cm,-1,,#1
+t = ,\it\i  =,\it,min,,2,#2
+N = ,\iN\i  =,\iN,,-1,,#3
+t1 = ,\it\a1\n  =,\it\a1,s,,2,#4
+
+r = 1,Ringjoone raadius,\ir,cm,,,ds*4
+nyy = 2,Pöörlemissagedus,\sn,Hz,,,N/(t*60)
+T = 3,Pöörlemisperiood,\iT,s,,,1/nyy
+d = 4,Ringjoone pikkus,\id,cm,,,2*3.1416*r
+v = 5,Joonkiirus,\iv,m/s,,,(d/100)/T
+a = 6,Kiirendus,\ia,m/s²,,,sqr(v)/(r/100)
+w = 7,Nurkkiirus,\sw,rad/s,,,2*3.1416*nyy
+fii1 = 8,Aja \it\a1\n jooksul sooritatud pöördenurk,\sf\a1,rad,,,w*t1
+d1 = 9,Läbitud kaare pikkus,\id\a1,cm,,,r*fii1
+fiik = 10,Pöördenurk kraadides,\sf\a1,°,,,180*fii1/3.1416
+x1 = 11,Keha x-koordinaat ajahetkel \it\a1,\ix\a1,cm,,,r*cos(fii1)
+y1 = 12,Keha y-koordinaat ajahetkel \it\a1,\iy\a1,cm,,,r*sin(fii1)
+dx = 14,Nihkevektori projektsioon x-teljel,\is\ax,cm,,,x1-r
+dy = 15,Nihkevektori projektsioon y-teljel,\is\ay,cm,,,y1
+s = 16,Nihkevektori pikkus,\is,cm,,,sqrt(sqr(dx)+sqr(dy))
+
+[Andmed]
+;ds,t,N,t1
+5,1,60,0.2
+4,1.5,45,0.4
+3,2,50,0.5
+2,3,90,0.3
+10,4,80,0.6
+15,1,15,0.9
+20,1.5,180,0.1
+5,2,100,0.2
+4,3,360,0.1
+3,4,160,0.3
+2,1,100,0.1
+10,1.5,15,1.2
+15,2,25,1
+20,3,30,1.4
+5,4,40,1.3
+4,1,120,0.1
+3,1.5,90,0.2
+2,2,70,0.3
+10,3,60,0.7
+15,4,120,0.4
+20,1,40,0.3
+5,1.5,45,0.3
+4,2,75,0.2
+3,3,180,0.2
+2,4,20,2
+10,1,90,0.1
+15,1.5,70,0.3
+20,2,200,0.1
+5,3,150,0.2
+4,4,75,0.5
+3,1,35,0.4
+2,1.5,75,0.2
+10,2,80,0.3
+15,3,50,0.8
+20,4,150,0.3
+5,2.5,50,0.5
