@@ -25,7 +25,7 @@ var timer = null;
 function fix(str) {
 	var subst = [ ["ü", "&uuml;"], ["Ü", "&Uuml;"], ["ä", "&auml;"], ["Ä", "&Auml;"], ["ö", "&ouml;"], ["Ö", "&Ouml;"], ["õ", "&otilde;"], ["Õ", "&Otilde;"] ];
 	for (var j = 0; j < subst.length; j++)
-		str = str.replace(subst[j][0], subst[j][1], "g");
+		str = str.replace(new RegExp(subst[j][0], "g"), subst[j][1]);
 	return str;
 }
 	
