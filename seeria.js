@@ -281,7 +281,7 @@ function loadVariant(variant) {
 			var str;
 
 			if (i > 0 && ini.Kysimused[i - 1][1] == 0 && kysNr2 != 0)
-				$('#steps').append($('<li></li>').attr('data-role', 'list-divider').text('Küsimused'));
+				$('#steps').append($('<li></li>').attr('data-role', 'list-divider').html('K&uuml;simused'));
 
 			if (variant == 'Valemid') {
 				str = '<h3>' + toHtml(kys) + ': </h3><p><b>' + toHtml(tahis) + '</b> = ' + valem + ' [<b>' + toHtml(yhik) + '</b>]</p>';
