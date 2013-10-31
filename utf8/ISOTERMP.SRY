@@ -1,0 +1,62 @@
+[Seeria]
+SeeriaNimi=Isotermiline protsess
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+p1 = ,\ip\a1\n  =,\ip\a1,kPa,-1,,#1
+l = ,\il\i  =,\il,cm,-1,,#2
+S = ,\iS\i  =,\iS,cm²,,,#3
+
+dl = 2,Joonlaua vähim jaotis,\sD\s\il,cm,,,l/10
+V1 = 3,Gaasi ruumala olekus 1,\iV\a1,cm³,,,dl*8*S
+p1V1 = 4,Rõhu ja ruumala korrutis,\ip\a1\aV\a1,Pa·m³,,,p1*V1/1E3
+V2 = 5,Gaasi ruumala olekus 2,\iV\a2,cm³,,,dl*4*S
+p2 = 6,Gaasi rõhk olekus 2,\ip\a2,kPa,,,p1V1*1E3/V2
+V3 = 7,Gaasi ruumala olekus 3,\iV\a3,cm³,,,dl*2*S
+p3 = 8,Gaasi rõhk olekus 3,\ip\a3,kPa,,,p1V1*1E3/V3
+dV = 9,Jaotise väärtus ruumala teljel,\sD\s\iV,cm³,,,V1/8
+dp = 10,Jaotise väärtus rõhu teljel,\sD\s\ip,kPa,,,p1
+dpdV = 14,Ruudu väärtus graafikul,\sD\s\ip\i\sD\s\iV,Pa·m³,,,dp*dV/1E3
+r13 = 15,Ruutude arv protsessi 1-3 graafiku all,\iN\a13,,,,16*ln(2)
+A = 16,Töö gaasi kokkusurumisel,\iA,J,,,dpdV*r13
+dE = 17,Gaasi siseenergia muut,\sD\s\iE,J,,,0
+Q = 18,Äraantud soojushulk,\iQ,J,,,A-dE
+
+[Andmed]
+;p1,l,S
+5,40,200
+50,80,800
+80,100,900
+45,50,300
+75,60,450
+60,30,100
+55,40,190
+70,80,790
+65,100,800
+85,50,290
+50,60,440
+80,30,110
+45,40,180
+75,80,780
+60,100,850
+55,50,280
+70,60,430
+65,30,110
+85,40,210
+50,80,810
+80,100,860
+45,50,310
+75,60,460
+60,30,120
+55,40,220
+70,80,820
+65,100,840
+85,50,320
+50,60,470
+80,30,130
+45,40,230
+75,80,830
+60,100,870
+55,50,330
+70,60,430
+65,30,140

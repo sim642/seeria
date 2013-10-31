@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Seeria</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="jquery.mobile-1.3.0.min.css" />
+	<script src="jquery-1.9.1.min.js"></script>
+	<script src="jquery.mobile-1.3.0.min.js"></script>
+	<script src="seeria.js"></script>
+	<script src="zitat.js"></script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-35281071-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+	<style>
+		#steps li:before {
+			content: counter(listnumbering, decimal) ") ";
+			/*width: 1.5em;*/
+			padding-right: .3em;
+			font-size: 0.8em;
+			font-weight: bold;
+			display: inline-block;
+		}
+
+		#steps li.alg:before {
+			content: "A) ";
+		}
+
+		#steps .ui-bar-b:before {
+			display: none;
+		}
+
+ 		#steps li h3 {
+			display: inline;
+			font-size: 0.9em;
+			font-weight: normal;
+		}
+
+		#steps li p {
+			display: inline;
+			margin-bottom: 0em;
+			white-space: normal;
+			font-size: 0.8em;
+		}
+
+		#zitat {
+			font-size: 0.8em;
+			font-weight: normal;
+			margin: 0.3em;
+			white-space: normal;
+		}
+	</style>
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Seeria</h1>
+		<fieldset data-role="controlgroup" data-type="horizontal">
+			<label for="nimi">&Uuml;lessanne</label>
+			<select name="nimi" id="nimi" data-mini="true">
+				<option value="">Vali &uuml;lesanne</option>
+			</select>
+			<label for="variant">Variant</label>
+			<select name="variant" id="variant" data-mini="true">
+				<option value="">Vali variant</option>
+				<option value="Valemid">Valemid</option>
+			</select>
+		</fieldset>
+	</div>
+
+	<div data-role="content">
+		<ul data-role="listview" id="steps">
+		</ul>		
+	</div>
+
+	<div data-role="footer">
+		<h1 id="zitat"></h1>
+	</div>
+</div>
+
+</body>
+</html>

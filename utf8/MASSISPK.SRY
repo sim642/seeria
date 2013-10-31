@@ -1,0 +1,65 @@
+[Seeria]
+SeeriaNimi=Massispektromeeter
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+AC = ,\iAC\i  =,\iAC,cm,-1,,#1
+U = ,\iU\i  =,\iU,V,,,#2
+B = ,\iB\i  =,\iB,T,,2,#3
+DE = ,\iDE\i  =,\iDE,cm,-1,,#4
+
+E = 1,Elektrivälja tugevus punktide A ja C vahel,\iE,V/m,,,U/(AC/100)
+q = 2,Prootoni laeng,\iq,C,1,,1.6E-19
+FpE = 3,Prootonile mõjuv jõud elektriväljas,\iF\apE,N,1,,q*E
+apE = 4,Prootoni kiirendus elektriväljas,\ia\apE,m/s²,1,,FpE/1.67E-27
+vp = 5,Prootoni kiirus punktis C,\iv\ap,m/s,1,,sqrt(2*apE*AC/100)
+FpM = 6,Prootonile mõjuv jõud magnetväljas,\iF\apM,N,1,,B*vp*q
+apM = 7,Prootoni kiirendus magnetväljas,\ia\apM,N,1,,FpM/1.67E-27
+rp = 8,Ringjoone raadius,\ir\ap,m,,,sqr(vp)/apM
+CD = 9,Ringjoone diameeter CD,\iCD,m,,,rp*2
+CE = 11,Iooni trajektoori diameeter,\iCE,m,,,CD+DE/100
+ri = 12,Iooni trajektoori raadius,\ir\ai,m,,,CE/2
+p = 13,Iooni impulss,\ip\ai,kg·m/s,1,,B*q*ri
+Ek = 14,Iooni kineetiline energia,\iE\aik,J,1,,U*q
+vi = 15,Iooni kiirus magnetväljas,\iv\ai,m/s,1,,2*Ek/p
+mi = 16,Iooni mass,\im\ai,kg,1,,p/vi
+mu = 17,Iooni mass aatommassiühikutes,\im\ai,u,,,mi/1.66E-27
+
+[Andmed]
+;AC,U,B,DE
+10,4800,0.1,20
+8,5800,0.11,60
+15,6700,0.13,50
+7,4500,0.12,40
+12,3900,0.09,20
+9,6500,0.14,50
+20,2500,0.1,40
+10,3800,0.11,40
+8,8100,0.13,20
+15,4800,0.12,50
+7,4700,0.09,60
+12,9600,0.14,50
+9,4800,0.1,20
+20,5800,0.11,60
+10,6700,0.13,50
+8,4500,0.12,40
+15,3100,0.08,20
+7,6500,0.14,50
+12,4000,0.1,50
+9,3800,0.11,40
+20,8000,0.13,20
+10,3100,0.12,40
+8,2100,0.09,40
+15,3500,0.14,30
+7,6900,0.12,20
+12,2600,0.11,40
+9,9700,0.13,60
+20,7100,0.12,50
+10,3900,0.09,20
+8,2100,0.1,40
+15,3200,0.09,50
+7,4500,0.08,60
+12,5800,0.11,20
+9,2100,0.1,40
+20,5700,0.12,50
+10,3500,0.07,60

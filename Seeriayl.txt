@@ -1,0 +1,53 @@
+; Fail SEERIA.SRY
+; Semikooloniga algavad read on kommentaarid.
+;
+; Faili ülesehitus:
+;
+; Inforead sektsioonis nimega [Kysimused] on sellise struktuuriga:
+;
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+;
+; m         - tähis, mida kasutatakse järgnevates valemites. Võib
+;             olla ka mitmetäheline.
+; kys_nr    - küsimuse number või siis
+;              0 - algandmed (ekraanil eraldatud tulemustest),
+;             -1 - konstant, ekraanil ei näidata,
+;             -2 - vahetulemus, ekraanil ei esine.
+; kysimus   - küsimus. Kui tekst ei sisalda koma ega tühikuid lõpus,
+;             võib jutumärgid ümbert ära jätta.
+;             Erisümboliteks tekstis on
+;              \y - edasi ülaindeks,
+;              \a - edasi alaindeks,
+;              \s - edasi Symbol-font,
+;              \i - edasi kaldkiri,
+;              \n - edasi normaalne tekst.
+; tahis     - tähis. Indeksite kirjutamine samamoodi, nagu küsimusel.
+; yhik      - mis ühikud käivad saadud numbri taha.
+;             Indeksite kirjutamine samamoodi, nagu küsimusel.
+; exp       -  0 - arvul pole kümne astmeid,
+;              1 - arvul on kümne astmed,
+;              3 - arvul on kümne astmed esitatud 3-ga jaguvatena,
+;             -1 - arv on esitatud (ümardatud) täisarvuna.
+; tyvenr    - -2 - ekraanil vastust pole, vaid küsimus,
+;             -1 - tegu on tekstiga,
+;              0 - tavaline (vaikimisi) arv tüvenumbreid,
+;             muud arvud fikseerivad tulemuse tüvenumbrite arvu.
+; valem     - valem, mille järgi arvutatakse antud väärtus.
+;             Arvud valemis kujul <märk><täisosa>.<murdosa>E<märk><exponent>.
+;             Kasutatavad on tehted:
+;              +, -  liitmine, lahutamine,
+;              *, /  korrutamine, jagamine,
+;              ^     astendamine,
+;              -     vastandväärtus,
+;              ( )   sulud tehete järjekorra täpsustamiseks,
+;              sqrt() ruutjuur,
+;              sqr()  ruut,
+;              sin(), cos(), tan()     trigonomeetrilised funktsioonid,
+;              asin(), acos(), atan()  trigonomeetrilised pöördfunktsioonid,
+;              ln(), exp(), lg()       logaritm, eksponent, kümnendlogaritm,
+;              #nr   viide algväärtuste tabeli veerule.
+;
+; Sektsioonis nimega [Andmed] tuleb algväärtuste tabel. Tabelis on
+; väärtused eraldatud komaga, arvude eksponendid tähega E. Tabel lõpeb,
+; kui tuleb kas tühi rida või faili lõpp.
+;-----------------------------------------------------------------------
