@@ -51,6 +51,8 @@ TRANSIST.SRY	Transistor
 VOOLURMM.SRY	Vooluraam magnetväljas
 MASSISPK.SRY	Massispektromeeter
 ELEKTVV.SRY	Elektromagnetiline vabavõnkumine
+ELMAGIND.SRY	Elektromagnetiline induktsioon (*)
+MVLIIKJ.SRY	Magnetväljas liikuv juht (*)
 VAHLDGNR.SRY	Vahelduvvoolu generaator
 VAHELDVV.SRY	Vahelduvvool
 OHMSVVR.SRY	Ohmi seadus vahelduvvooluringis
@@ -67,4 +69,3 @@ WILSONIK.SRY	Wilsoni kamber
 AHELRKTS.SRY	Ahelreaktsioon
 TERMOTM.SRY	Termotuumareaktsioon
 GRAVITY.SRY	Gravitatsioon
-ELMAGIND.SRY	Elektromagnetiline induktsioon (*)
