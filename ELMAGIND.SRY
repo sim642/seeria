@@ -1,0 +1,24 @@
+[Seeria]
+SeeriaNimi=Elektromagnetiline induktsioon
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+b = ,\ib\i  =,\ib,m,-1,,#1
+c = ,\ic\i  =,\ic,m,-1,,#2
+B = ,\iB\i  =,\iB,T,-1,,#3
+alfa = ,\sa\s  =,\sa,°,-1,,#4
+v = ,\iv\i  =,\iv,m/s,-1,,#5
+R = ,\iR\i  =,\iR,\sW,-1,,#6
+
+S1 = 1,Raami pindala asendis 1,\iS\a1,m²,,,b*c
+W1 = 2,Magnetvoog läbi raami asendis 1,\i\sF\a1,Wb,,,B*S1*cos(3.1416*alfa/180)
+S2 = 3,Raami pindala asendis 2,\iS\a2,m²,,,3/4*b*c
+W2 = 4,Magnetvoog läbi raami asendis 2,\i\sF\a2,Wb,,,B*S2*cos(3.1416*alfa/180)
+dW = 5,Magnetvoo muut,\sD\iF,Wb,,,W2-W1
+dt = 6,Muudule vastav aeg,\sD\s\it,s,,,(c/4)/v
+E = 7,Raamis indutseeritud elektromotoorjõud,\se,V,,,-dW/dt
+I = 8,Ampermeetri näit,\iI,A,,,E/R
+
+[Andmed]
+;b,c,B,alfa,v,R
+2.2,1.4,0.2,45,4,5
