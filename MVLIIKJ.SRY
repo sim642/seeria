@@ -1,0 +1,60 @@
+[Seeria]
+SeeriaNimi=Magnetväljas liikuv juht
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+ds = ,Ruut,Ruut,m,-1,,#1
+t = ,\it\i  =,\it,s,-1,,#2
+B = ,\iB\i  =,\iB,T,-1,,#3
+R = ,\iR\i  =,\iR,\sW,-1,,#4
+
+l = 1,Juhi pikkus,\il,m,,,5*ds
+s = 2,Juhi nihe,\is,m,,,4*ds
+v = 3,Juhi liikumise kiirus,\iv,m/s,,,s/t
+alfa = 4,Nurk kiiruse ja jõujoonte vahel,\sa,°,,,90
+E = 5,Juhis tekkiv elektromotoorjõud,\se,V,,,B*v*l*sin(3.1416*alfa/180)
+I = 6,Ampermeetri näit,\iI,A,,,E/R
+beeta = 8,Nurk voolu suuna ja jõujoonte vahel,\sb,°,,,90
+F = 9,Vooluga juhtmele mõjuv jõud,\iF,N,,,B*I*l*sin(3.1416*beeta/180)
+gamma = 11,Nurk jõu ja nihke vahel,\sg,°,,,180
+A = 12,Selle jõu töö juhi liikumisel,\iA,J,,,F*s*cos(3.1416*gamma/180)
+N = 13,Vooluringis eralduv soojuslik võimsus,\iN,W,,,sqr(I)*R
+
+[Andmed]
+;ds,t,B,R
+0.4,0.5,0.5,2
+0.3,0.3,0.4,4
+0.4,0.2,0.3,6
+0.5,0.3,0.2,8
+0.6,0.5,0.1,3
+0.4,0.6,0.9,5
+0.3,0.5,0.8,7
+0.4,0.4,0.7,9
+0.5,0.3,0.1,2
+0.6,0.2,0.2,4
+0.2,0.1,0.4,6
+0.7,0.5,0.3,8
+0.5,0.6,0.2,3
+0.9,0.5,0.1,5
+0.5,0.5,0.8,7
+0.3,0.3,0.8,9
+0.3,0.8,0.7,2
+0.4,0.7,0.6,4
+0.5,0.5,0.5,6
+0.6,0.6,0.4,8
+0.8,0.5,0.1,3
+0.6,0.4,0.2,5
+0.4,0.3,0.3,7
+0.5,0.7,0.9,9
+0.6,0.8,0.6,2
+0.2,0.3,0.7,4
+0.3,0.5,0.6,6
+0.7,0.7,0.5,8
+0.5,0.6,0.4,3
+0.6,0.3,0.3,5
+0.2,0.2,0.6,7
+0.3,0.1,0.2,9
+0.4,0.5,0.4,2
+0.5,0.9,0.8,4
+0.6,0.7,0.7,6
+0.2,0.4,0.6,8
