@@ -103,25 +103,27 @@ function toHtml(str) {
 			}
 			else {
 				if (newtag == 'y') {
-					if ('a' in tag) {
+					if ('a' in tag)
 						newStr += '</sub>';
-						delete tag['a'];
-					}
-					if ('s' in tag) {
+					if ('s' in tag)
 						newStr += '</span>';
-						delete tag['s'];
-					}
+					if ('i' in tag)
+						newStr += '</i>';
+
+					tag = {};
+
 					newStr += '<sup>';
 				}
 				else if (newtag == 'a') {
-					if ('y' in tag) {
+					if ('y' in tag)
 						newStr += '</sup>';
-						delete tag['y'];
-					}
-					if ('s' in tag) {
+					if ('s' in tag)
 						newStr += '</span>';
-						delete tag['s'];
-					}
+					if ('i' in tag)
+						newStr += '</i>';
+
+					tag = {};
+
 					newStr += '<sub>';
 				}
 				else if (newtag == 's')
