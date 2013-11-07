@@ -72,52 +72,68 @@ function lg(x) {
 
 function toHtml(str) {
 	var newStr = '';
-	var tag = 'n';
+	var tag = {};
 	for (var i = 0; i < str.length; i++) {
 		if (str[i] == '\\') {
-			if (tag == 'n') {
-				
-			}
-			else if (tag == 'y') {
-				newStr += '</sup>';
-			}
-			else if (tag == 'a') {
-				newStr += '</sub>';
-			}
-			else if (tag == 's') {
-				newStr += '</span>';
-			}
-			else if (tag == 'i') {
-				newStr += '</i>';
-			}
-			
-			var oldtag = tag;
-			
 			i++;
-			tag = str[i];
-			if (oldtag != tag) {
-				if (tag == 'n') {
-					
-				}
-				else if (tag == 'y') {
-					newStr += '<sup>';
-				}
-				else if (tag == 'a') {
-					newStr += '<sub>';
-				}
-				else if (tag == 's') {
-					newStr += '<span>';
-				}
-				else if (tag == 'i') {
-					newStr += '<i>';
-				}
+			newtag = str[i];
+			if (newtag == 'n') {
+				if ('y' in tag)
+					newStr += '</sup>';
+				if ('a' in tag)
+					newStr += '</sub>';
+				if ('s' in tag)
+					newStr += '</span>';
+				if ('i' in tag)
+					newStr += '</i>';
+
+				tag = {};
+			}
+			else if (newtag in tag) {
+				if (newtag == 'y')
+					newStr += '</sup>';
+				else if (newtag == 'a')
+					newStr += '</sub>';
+				else if (newtag == 's')
+					newStr += '</span>';
+				else if (newtag == 'i')
+					newStr += '</i>';
+
+				delete tag[newtag];
 			}
 			else {
-				tag = 'n';
+				if (newtag == 'y') {
+					if ('a' in tag) {
+						newStr += '</sub>';
+						delete tag['a'];
+					}
+					if ('s' in tag) {
+						newStr += '</span>';
+						delete tag['s'];
+					}
+					newStr += '<sup>';
+				}
+				else if (newtag == 'a') {
+					if ('y' in tag) {
+						newStr += '</sup>';
+						delete tag['y'];
+					}
+					if ('s' in tag) {
+						newStr += '</span>';
+						delete tag['s'];
+					}
+					newStr += '<sub>';
+				}
+				else if (newtag == 's')
+					newStr += '<span>';
+				else if (newtag == 'i')
+					newStr += '<i>';
+
+				tag[newtag] = true;
 			}
 		}
 		else {
-			if (tag == 's') {
+			if ('s' in tag) {
 				//newStr += String.fromCharCode(str[i].charCodeAt(0) + 0x0390 - 0x40 - 1);
 				//'ABGDEZHQIKLMNXOPRSTUFCYW'
 				//'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ'
@@ -132,21 +148,16 @@ function toHtml(str) {
 			}
 		}
 	}
-	if (tag == 'n') {
-		
-	}
-	else if (tag == 'y') {
+
+	if ('y' in tag)
 		newStr += '</sup>';
-	}
-	else if (tag == 'a') {
+	if ('a' in tag)
 		newStr += '</sub>';
-	}
-	else if (tag == 's') {
+	if ('s' in tag)
 		newStr += '</span>';
-	}
-	else if (tag == 'i') {
+	if ('i' in tag)
 		newStr += '</i>';
-	}
+
 	return newStr;
 }
 
