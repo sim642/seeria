@@ -17,6 +17,7 @@ var zitate = [
 	"Ei saa võrrelda võrreldamatut - Allah on suur",
 	"Sa oled saavutanud mitu võitu, üks neist on vähevõitu",
 	"Mul tuleb ainult kuldmune ja neid tuleb vaid ühekaupa",
+	"Eksperimendi asendame möla ja kriidiga",
 	">>> Siin võiks seista Sinu pakutud Madis Reemanni tsitaat <<<",
 ];
 
