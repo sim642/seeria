@@ -18,6 +18,7 @@ var zitate = [
 	"Sa oled saavutanud mitu võitu, üks neist on vähevõitu",
 	"Mul tuleb ainult kuldmune ja neid tuleb vaid ühekaupa",
 	"Eksperimendi asendame möla ja kriidiga",
+	"Ära puuderda, ära peegelda, istu kodus ja heegelda",
 	">>> Siin võiks seista Sinu pakutud Madis Reemanni tsitaat <<<",
 ];
 
