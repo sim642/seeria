@@ -20,7 +20,7 @@ I = 11,Ampermeetri näit,\iI,A,,,U/X
 UR = 12,Pinge takisti otstel,\iU\aR,V,,,I*R
 fii = 13,Faaside vahe pinge ja voolutugevuse vahel,\sj,°,,,180*atan((XC-XL)/R)/3.1416
 cosf = 14,Võimsustegur cos\sj,cos\sj,,,,cos(3.1416*fii/180)
-NR = 15,Takistil eralduv võimsus,\iN\aR,W,,,UR*I
+NR = 15,Takistil eralduv võimsus,\iN\aR,W,,,U*I*cos(3.1416*fii/180)
 nyy1 = 16,"Vahelduvvoolu sagedus, mille korral on \iU\i ja \iI\i faasinihe 0",\sn\a0,Hz,,,1/(2*3.1416*sqrt(L*C/1E6))
 
 [Andmed]
