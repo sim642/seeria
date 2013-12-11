@@ -12,7 +12,7 @@ var zitate = [
 	"Oo, elu, virtsamere haisev lokse! Oo, maailm, purjus jumalate okse!",
 	"Vaiki, õnnetu!",
 	"Te peaksite rohkem ütlema ja vähem mõtlema. Välja arvatud härra Mere - tema peaks enne mõtlema ja siis ütlema",
-	"Minu soegu nimetuseks on Lähme Mammuteid Küttima",
+	"Minu soengu nimetuseks on Lähme Mammuteid Küttima",
 	"Teil on kaks viga: te karjute minust üle ja haugute veel vastu ka",
 	"Ei saa võrrelda võrreldamatut - Allah on suur",
 	"Sa oled saavutanud mitu võitu, üks neist on vähevõitu",
