@@ -23,7 +23,7 @@ EC = 14,Kondensaatori suurim elektrivälja energia,\iE\aCm,J,,,(C/1E6)*sqr(Um)/2
 UmC = 15,Kondensaatori nõutav nimipinge,\iU\aCm,V,,,Um
 XL = 16,Pooli induktiivtakistus,\iX\aL,\sW,,,w*L
 IL = 17,Ampermeetri näit,\iI\aL,A,,,U/XL
-EL = 18,Pooli suurim magnetvälja energia,\iE\aLm,J,,,L*sqr(IL)
+EL = 18,Pooli suurim magnetvälja energia,\iE\aLm,J,,,L*sqr(IL*sqrt(2))/2
 
 [Andmed]
 ;dt,du,R,C,L
