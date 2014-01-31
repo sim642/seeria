@@ -19,6 +19,7 @@ var zitate = [
 	"Mul tuleb ainult kuldmune ja neid tuleb vaid ühekaupa",
 	"Eksperimendi asendame möla ja kriidiga",
 	"Ära puuderda, ära peegelda, istu kodus ja heegelda",
+	"Kellele meeldib ema, kellele tütar - see on maitse asi",
 	">>> Siin võiks seista Sinu pakutud Madis Reemanni tsitaat <<<",
 ];
 
