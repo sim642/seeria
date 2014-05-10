@@ -20,6 +20,9 @@ var zitate = [
 	"Eksperimendi asendame möla ja kriidiga",
 	"Ära puuderda, ära peegelda, istu kodus ja heegelda",
 	"Kellele meeldib ema, kellele tütar - see on maitse asi",
+	"Ärge oma ideaale peenraha vatu vahetage ja kui ennast müüte, siis müüge kallilt",
+	"Ma pole kuri inimene, vaid rõõmus sadist",
+	"Lugege läbi ja tehke nägu, et saite aru",
 	">>> Siin võiks seista Sinu pakutud Madis Reemanni tsitaat <<<",
 ];
 
