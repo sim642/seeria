@@ -20,6 +20,7 @@ L = 11,Valguse lainepikkus,\sl,nm,,,216+13.423/(n-1.613888)
 nyy = 12,Valguslaine sagedus,\sn,Hz,1,,3E8/(L/1E9)
 v = 13,Valguse levimiskiirus prismas,\iv\ac,m/s,1,,3E8/n
 L1 = 14,Valguse lainepikkus prismas,\sl\a1,nm,,,1E9*v/nyy
+l = 16,Spektri laius ekraanil valge valguse korral,l,mm,,,sqrt(sqr(AB)-sqr(BC))*(tan(asin(1.69*salfa)-3.1416*fii/180) - tan(asin(1.6425*salfa)-3.1416*fii/180))
 
 [Andmed]
 ;a,h,AB,BC
