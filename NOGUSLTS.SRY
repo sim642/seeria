@@ -1,0 +1,58 @@
+[Seeria]
+SeeriaNimi=Nõgus lääts
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+ds = ,Ruut,Ruut,cm,,2,#1
+a = ,\ia\i  =,\ia,cm,,2,#2
+f = ,\if\i  =,\if,cm,,2,-#3
+
+ha = 1,Eseme kõrgus,\ih\aa,cm,,,ds*2
+ar = 2,Läätse kaugus esemest ruutudes,\ia,ruutu,,,a/ds
+fr = 3,Fookuskaugus ruutudes,\if,ruutu,,,f/ds
+k = 7,Kujutise kaugus läätsest,\ik,cm,,,1/(1/f-1/a)
+s = 8,Suurendus,\is,,,,k/a
+hk = 9,Kujutise kõrgus,\ih\ak,cm,,,ha*s
+a1 = 13,Eseme kaugus läätsest teises katses,\ia\a1,cm,,,a/3
+k1 = 15,Kujutise kaugus,\ik\a1,cm,,,1/(1/f-1/a1)
+s1 = 16,Suurendus,\is\a1,,,,k1/a1
+hk1 = 17,Kujutise kõrgus,\ih\ak1,cm,,,ha*s1
+
+[Andmed]
+;ds,a,f
+1,9,5
+0.5,7.5,4
+2,12,8
+0.8,9.6,5.6
+0.4,3.6,2.4
+2,30,18
+0.6,3.6,3
+1,12,8
+0.5,7.5,3.5
+2,18,8
+1.5,18,9
+2.5,15,7.5
+0.8,7.2,4
+0.6,9,4.8
+1,6,4
+0.5,6,3.5
+2,18,12
+3,45,27
+0.4,2.4,2
+2.5,30,20
+0.6,9,4.2
+1,9,4
+0.5,6,3
+2,12,6
+3,27,15
+0.4,6,3.2
+2.5,15,10
+0.6,7.2,4.2
+1,9,6
+0.5,7.5,4.5
+2,12,10
+1.5,18,12
+0.4,6,2.8
+3,27,12
+0.6,7.2,3.6
+1,6,3

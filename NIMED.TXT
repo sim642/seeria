@@ -59,6 +59,7 @@ OHMSVVR.SRY	Ohmi seadus vahelduvvooluringis
 TASAPGL.SRY	Tasapeegel
 VALGMRD.SRY	Valguse murdumisseadus
 KOONDLTS.SRY	Koondav lääts
+NOGUSLTS.SRY	Nõgus lääts (*)
 VALGDISP.SRY	Valguse dispersioon
 VALGDFRI.SRY	Valguse difraktsioon ja interferents
 FOTOEFKT.SRY	Fotoefekt
