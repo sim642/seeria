@@ -60,6 +60,7 @@ TASAPGL.SRY	Tasapeegel
 VALGMRD.SRY	Valguse murdumisseadus
 KOONDLTS.SRY	Koondav lääts
 HAJUTLTS.SRY	Hajutav lääts (*)
+NOGUSPGL.SRY	Nõguspeegel (*)
 VALGDISP.SRY	Valguse dispersioon
 VALGDFRI.SRY	Valguse difraktsioon ja interferents
 FOTOEFKT.SRY	Fotoefekt
