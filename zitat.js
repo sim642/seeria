@@ -23,6 +23,10 @@ var zitate = [
 	"Ärge oma ideaale peenraha vatu vahetage ja kui ennast müüte, siis müüge kallilt",
 	"Ma pole kuri inimene, vaid rõõmus sadist",
 	"Lugege läbi ja tehke nägu, et saite aru",
+	"Kui on üks karv peas, siis on vähevõitu, aga kui on üks karv supi sees, siis on öak, üleliia",
+	"Kuulake! Kulub marjaks ära. Kui lähete koju, siis on seal üks kohutavalt suur jõhvikas",
+	"Ega seal midagi teha ei ole: inimene jahib, jumal juhib",
+	"Elektronid töötavad üksikuna, mitte nagu vene pätid",
 	">>> Siin võiks seista Sinu pakutud Madis Reemanni tsitaat <<<",
 ];
 
