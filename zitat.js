@@ -27,6 +27,11 @@ var zitate = [
 	"Kuulake! Kulub marjaks ära. Kui lähete koju, siis on seal üks kohutavalt suur jõhvikas",
 	"Ega seal midagi teha ei ole: inimene jahib, jumal juhib",
 	"Elektronid töötavad üksikuna, mitte nagu vene pätid",
+	"Paralleelsed sirged ei kohtu enne üheteistkümnendat kilomeetrit",
+	"Siin esitan küsimusi mina",
+	"Noored inimesed arvavad, et tähis on raha, vanad inimesed teavad seda",
+	"Vanasti, kui veel loomad rääkisid, õunad olid väikesed ning needki ussitanud",
+	"Vihmaussi surm on kõige traagilisem vihmaussile endale",
 	">>> Siin võiks seista Sinu pakutud Madis Reemanni tsitaat <<<",
 ];
 
