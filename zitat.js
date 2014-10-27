@@ -32,6 +32,7 @@ var zitate = [
 	"Noored inimesed arvavad, et tähis on raha, vanad inimesed teavad seda",
 	"Vanasti, kui veel loomad rääkisid, õunad olid väikesed ning needki ussitanud",
 	"Vihmaussi surm on kõige traagilisem vihmaussile endale",
+	"Kui vanemleitnant Reemann räägib, siis muusad vaikivad",
 	">>> Siin võiks seista Sinu pakutud Madis Reemanni tsitaat <<<",
 ];
 
