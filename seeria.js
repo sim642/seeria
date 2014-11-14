@@ -279,9 +279,9 @@ function loadVariant(variant) {
 			if (valem.indexOf('^') != -1)
 				alert('shit');
 			
-			for (var j = 0; j < andmed.length; j++) {
-				e = e.replace('#' + (j + 1).toString(), andmed[j]);
-			}
+			e = e.replace(/#(\d+)/g, function(match, p1) {
+				return andmed[parseInt(p1) - 1].toString();
+			});
 			
 			var ret = evalVars(e, vars);
 			vars[sym] = ret;
