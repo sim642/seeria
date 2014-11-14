@@ -15,9 +15,9 @@ mt = 7,Tuuma seisumass,\im\at,u,,9,ma-ne*0.0005486
 dmu = 8,Massidefekt,\sD\s\im,u,,,mpn-mt
 dm = 9,Massidefekt kilogrammides,\sD\s\im,kg,1,,dmu*1.66E-27
 Ej = 10,Seoseenergia dzaulides,\iE\as,J,1,,dm*sqr(3E8)
-EeV = 11,Seoseenergia elektronvoltides,\iE\as,eV,3,,Ej/1.6E-19
+EeV = 11,Seoseenergia megaelektronvoltides,\iE\as,MeV,,,Ej/1.6E-13
 E1j = 12,Eriseoseenergia dzaulides,\iE\as1,J,1,,Ej/(np+nn)
-E1eV = 13,Eriseoseenergia megaelektronvoltides,\iE\as1,MeV,,,EeV/(np+nn)/1E6
+E1eV = 13,Eriseoseenergia megaelektronvoltides,\iE\as1,MeV,,,EeV/(np+nn)
 
 [Andmed]
 ;nimi,ma,np,nn
