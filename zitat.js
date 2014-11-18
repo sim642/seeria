@@ -33,6 +33,8 @@ var zitate = [
 	"Vanasti, kui veel loomad rääkisid, õunad olid väikesed ning needki ussitanud",
 	"Vihmaussi surm on kõige traagilisem vihmaussile endale",
 	"Kui vanemleitnant Reemann räägib, siis muusad vaikivad",
+	"Katse korda läinud on: seal, kus vaja, lõhkes pomm",
+	"Mina vanainimene enam õlut ei joo, õlu teeb laisaks ja lolliks, tean seda omast käest. Ma joon parem viina, see teeb ainult lolliks.",
 	">>> Siin võiks seista Sinu pakutud Madis Reemanni tsitaat <<<",
 ];
 
