@@ -35,6 +35,9 @@ var zitate = [
 	"Kui vanemleitnant Reemann räägib, siis muusad vaikivad",
 	"Katse korda läinud on: seal, kus vaja, lõhkes pomm",
 	"Mina vanainimene enam õlut ei joo, õlu teeb laisaks ja lolliks, tean seda omast käest. Ma joon parem viina, see teeb ainult lolliks.",
+	"Töövarjutus on see, kui töö seisab päikese ees",
+	"Elu on elektrolüüs",
+	"Inimene on see kõige rafineeritum värdjas, kelle vastu teised värdjad ei saa",
 	">>> Siin võiks seista Sinu pakutud Madis Reemanni tsitaat <<<",
 ];
 
