@@ -32,12 +32,17 @@ var zitate = [
 	"Noored inimesed arvavad, et tähis on raha, vanad inimesed teavad seda",
 	"Vanasti, kui veel loomad rääkisid, õunad olid väikesed ning needki ussitanud",
 	"Vihmaussi surm on kõige traagilisem vihmaussile endale",
-	"Kui vanemleitnant Reemann räägib, siis muusad vaikivad",
+	"Relvad ei kõnele, kui muusad räägivad. Kui vanemleitnant Reemann räägib, siis muusad vaikivad.",
 	"Katse korda läinud on: seal, kus vaja, lõhkes pomm",
 	"Mina vanainimene enam õlut ei joo, õlu teeb laisaks ja lolliks, tean seda omast käest. Ma joon parem viina, see teeb ainult lolliks.",
 	"Töövarjutus on see, kui töö seisab päikese ees",
 	"Elu on elektrolüüs",
 	"Inimene on see kõige rafineeritum värdjas, kelle vastu teised värdjad ei saa",
+	"Eesti esimene tuumafüüsik oli Lydia Koidula",
+	"Elektron on sinine kuulike, mille lähemal vaatlemisel ilmub väike miinusmärk",
+	"Selliseid küsimusi nagu \"Miks?\" viisakas seltskonnas ei esitata"
+	"Vastik inimene on see, kes küsimuse \"Kuidas sul läheb?\" peale hakkabki rääkima, kuidas tal läheb",
+	"Kui vana testament ei sobi, peab uue kirjutama. Seda Einstein tegigi.",
 	">>> Siin võiks seista Sinu pakutud Madis Reemanni tsitaat <<<",
 ];
 
