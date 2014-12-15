@@ -40,7 +40,7 @@ var zitate = [
 	"Inimene on see kõige rafineeritum värdjas, kelle vastu teised värdjad ei saa",
 	"Eesti esimene tuumafüüsik oli Lydia Koidula",
 	"Elektron on sinine kuulike, mille lähemal vaatlemisel ilmub väike miinusmärk",
-	"Selliseid küsimusi nagu \"Miks?\" viisakas seltskonnas ei esitata"
+	"Selliseid küsimusi nagu \"Miks?\" viisakas seltskonnas ei esitata",
 	"Vastik inimene on see, kes küsimuse \"Kuidas sul läheb?\" peale hakkabki rääkima, kuidas tal läheb",
 	"Kui vana testament ei sobi, peab uue kirjutama. Seda Einstein tegigi.",
 	"Seal, kus teadus on hästi arenenud, on pseudoteadus veel rohkem arenenud, näiteks USA-s",
