@@ -43,6 +43,8 @@ var zitate = [
 	"Selliseid küsimusi nagu \"Miks?\" viisakas seltskonnas ei esitata"
 	"Vastik inimene on see, kes küsimuse \"Kuidas sul läheb?\" peale hakkabki rääkima, kuidas tal läheb",
 	"Kui vana testament ei sobi, peab uue kirjutama. Seda Einstein tegigi.",
+	"Seal, kus teadus on hästi arenenud, on pseudoteadus veel rohkem arenenud, näiteks USA-s",
+	"Meil siin Tartus on vaikne. Kui kuskil käib sulps, siis teised karjuvad: \"Ärge tekitage laineid,\" sest kõik teavad, et on sünnist saadik sita sees.",
 	">>> Siin võiks seista Sinu pakutud Madis Reemanni tsitaat <<<",
 ];
 
