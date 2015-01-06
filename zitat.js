@@ -45,6 +45,8 @@ var zitate = [
 	"Kui vana testament ei sobi, peab uue kirjutama. Seda Einstein tegigi.",
 	"Seal, kus teadus on hästi arenenud, on pseudoteadus veel rohkem arenenud, näiteks USA-s",
 	"Meil siin Tartus on vaikne. Kui kuskil käib sulps, siis teised karjuvad: \"Ärge tekitage laineid,\" sest kõik teavad, et on sünnist saadik sita sees.",
+	"\"Kas praktikumi töid saab veel tuua?\" \"Tuut! Rong sõitis minema.\"",
+	"Kui ei ole mõtet, siis hakkavad mängima põhimõtted",
 	">>> Siin võiks seista Sinu pakutud Madis Reemanni tsitaat <<<",
 ];
 
