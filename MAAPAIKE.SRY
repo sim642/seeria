@@ -1,0 +1,63 @@
+[Seeria]
+SeeriaNimi=Maa ja Päike
+
+[Kysimused]
+; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
+t = ,Kirja saabumise aeg,\it,,,4,#3
+
+p0 = 1,Asukoha geograafiline laius,\sf\s\a0,°,,,#1
+ap = 4,Põhjanaela nurkkõrgus,\sa\s\ap,°,,,p0
+akev = 5,Päikese nurkkõrgus kevadisel pööripäeval,\sa\s\ake,°,,,90-p0
+asug = 6,Päikese nurkkõrgus sügisesel pööripäeval,\sa\s\asü,°,,,akev
+da = 7,Pöörijoone laiuskraad,\sDa,°,,,23.5
+asuv = 8,Päikese nurkkõrgus suvisel pööripäeval,\sa\s\asu,°,,,akev+da
+atal = 9,Päikese nurkkõrgus talvisel pööripäeval,\sa\s\ata,°,,,akev-da
+l = 10,1m pikkuse vaia varju pikkus,\il,m,,,1/tan(atal*3.1416/180)
+t0 = 11,Kirja saatmine Ida-Euroopa aja järgi,\it\a0,,,4,11.00+2.00
+dt = 12,Kirja teel olemise aeg,\sD\s\it,h,,,t-t0
+l = 13,Tõelise keskpäeva pikkuskraad kell 12:00,\sl,°,,,2*(360/24)
+l0 = 14,Asukoha geograafiline pikkus,\sl\s\a0,°,,,#2
+t1 = 16,Tõelise keskpäeva aeg antud asukohas,\it\a1,,,4,12.00+(l-l0)*(24*60/360)*0.01
+dt2 = 18,Tõelise keskpäeva erinevus Tallinnaga,\sD\s\it\a2,min,,,(l0-24.7053)*(24*60/360)
+S = 19,1m² pindalaga plaadi varju pindala,\iS,m²,,,1/sin(atal*3.1416/180)
+k = 20,Mitu korda vähem energiat saab varju pindalaühik?,\ik,,,,S/1
+
+[Andmed]
+;p0,l0,t
+57.8287,26.5340,14.07
+58.2266,26.4182,14.04
+58.9427,23.5411,14.06
+58.7451,26.3970,14.02
+59.3553,27.4177,14.05
+58.6679,27.1554,14.01
+59.3392,25.3285,14.03
+59.3066,24.4164,14.08
+59.3569,26.9631,14.07
+59.5093,26.5274,14.04
+58.2573,22.4934,14.06
+58.9976,22.7472,14.02
+58.6822,23.8333,14.05
+59.5840,25.7210,14.01
+59.4806,25.0206,14.03
+58.8482,26.9444,14.08
+58.0928,25.1809,14.07
+59.3761,28.1978,14.04
+58.0602,26.4924,14.06
+58.8865,25.5622,14.02
+59.3521,24.0577,14.05
+58.6563,25.9768,14.01
+58.0639,27.0703,14.03
+58.3846,24.5160,14.08
+59.3528,26.3605,14.07
+58.9995,24.8013,14.04
+58.0996,27.4669,14.06
+59.4003,27.7358,14.02
+59.1640,26.0936,14.05
+59.2716,25.9484,14.01
+58.0024,25.9233,14.03
+58.8086,25.4261,14.08
+57.7788,26.0497,14.07
+58.3612,25.5747,14.04
+58.6335,25.5602,14.06
+57.8375,27.0128,14.02
+

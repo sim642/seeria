@@ -71,3 +71,5 @@ WILSONIK.SRY	Wilsoni kamber
 AHELRKTS.SRY	Ahelreaktsioon
 TERMOTM.SRY	Termotuumareaktsioon
 GRAVITY.SRY	Gravitatsioon
+MAAPAIKE.SRY	Maa ja Päike
+
