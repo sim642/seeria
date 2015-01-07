@@ -4,6 +4,7 @@ SeeriaNimi=Maa ja Päike
 [Kysimused]
 ; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
 t = ,Kirja saabumise aeg,\it,(hh.mm),,4,#3
+tz = ,Eesti ajatsoon kevadisel pööripäeval,\iT,h,,,2.00
 
 p0 = 1,Asukoha geograafiline laius,\sf\s\a0,°,,,#1
 ap = 4,Põhjanaela nurkkõrgus,\sa\s\ap,°,,,p0
@@ -13,9 +14,9 @@ da = 7,Pöörijoone laiuskraad,\sDa,°,,,23.5
 asuv = 8,Päikese nurkkõrgus suvisel pööripäeval,\sa\s\asu,°,,,akev+da
 atal = 9,Päikese nurkkõrgus talvisel pööripäeval,\sa\s\ata,°,,,akev-da
 l = 10,1m pikkuse vaia varju pikkus,\il,m,,,1/tan(atal*3.1416/180)
-t0 = 11,Kirja saatmine Ida-Euroopa aja järgi,\it\a0,(hh.mm),,4,11.00+2.00
+t0 = 11,Kirja saatmine Ida-Euroopa aja järgi,\it\a0,(hh.mm),,4,11.00+tz
 dt = 12,Kirja teel olemise aeg,\sD\s\it,(hh.mm),,,t-t0
-l = 13,Tõelise keskpäeva pikkuskraad kell 12:00,\sl,°,,,2*(360/24)
+l = 13,Tõelise keskpäeva pikkuskraad kell 12:00,\sl,°,,,tz*(360/24)
 l0 = 14,Asukoha geograafiline pikkus,\sl\s\a0,°,,,#2
 t1 = 16,Tõelise keskpäeva aeg antud asukohas,\it\a1,(hh.mm),,4,12.00+(l-l0)*(24*60/360)*0.01
 dt2 = 18,Tõelise keskpäeva erinevus Tallinnaga,\sD\s\it\a2,min,,,(l0-24.7053)*(24*60/360)
