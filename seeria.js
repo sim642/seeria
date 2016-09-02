@@ -187,7 +187,7 @@ var ini;
 
 function loadSry(filename) {
 	$('#steps').html('');
-	$.get(filename, function(data) {
+	$.get('sry/' + filename, function(data) {
 		ini = parseINIString(data);
 		var val = $('#variant option:selected').val();
 		if (val != '')
