@@ -29,7 +29,7 @@ var zitate = [
 	"Elektronid töötavad üksikuna, mitte nagu vene pätid",
 	"Paralleelsed sirged ei kohtu enne üheteistkümnendat kilomeetrit",
 	"Siin esitan küsimusi mina",
-	"Noored inimesed arvavad, et tähis on raha, vanad inimesed teavad seda",
+	"Noored inimesed arvavad, et tähtis on raha, vanad inimesed teavad seda",
 	"Vanasti, kui veel loomad rääkisid, õunad olid väikesed ning needki ussitanud",
 	"Vihmaussi surm on kõige traagilisem vihmaussile endale",
 	"Relvad ei kõnele, kui muusad räägivad. Kui vanemleitnant Reemann räägib, siis muusad vaikivad.",
