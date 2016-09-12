@@ -20,7 +20,7 @@ var zitate = [
 	"Eksperimendi asendame möla ja kriidiga",
 	"Ära puuderda, ära peegelda, istu kodus ja heegelda",
 	"Kellele meeldib ema, kellele tütar - see on maitse asi",
-	"Ärge oma ideaale peenraha vatu vahetage ja kui ennast müüte, siis müüge kallilt",
+	"Ärge oma ideaale peenraha vastu vahetage ja kui ennast müüte, siis müüge kallilt",
 	"Ma pole kuri inimene, vaid rõõmus sadist",
 	"Lugege läbi ja tehke nägu, et saite aru",
 	"Kui on üks karv peas, siis on vähevõitu, aga kui on üks karv supi sees, siis on öak, üleliia",
