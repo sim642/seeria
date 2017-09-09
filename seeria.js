@@ -304,6 +304,8 @@ function loadVariant(variant) {
 				ret = sigFigs(ret, tyveNr == '' ? 7 : tyveNr);
 				if (exp > 0)
 					retStr = ret.toExponential();
+				else if (exp < 0)
+					retStr = ret.toFixed();
 				else
 					retStr = ret.toString();
 
