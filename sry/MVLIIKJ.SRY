@@ -3,9 +3,9 @@ SeeriaNimi=Magnetväljas liikuv juht
 
 [Kysimused]
 ; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
-ds = ,Ruut,Ruut,m,-1,,#1
-t = ,\it\i  =,\it,s,-1,,#2
-B = ,\iB\i  =,\iB,T,-1,,#3
+ds = ,Ruut,Ruut,m,,2,#1
+t = ,\it\i  =,\it,s,,2,#2
+B = ,\iB\i  =,\iB,T,,2,#3
 R = ,\iR\i  =,\iR,\sW,-1,,#4
 
 l = 1,Juhi pikkus,\il,m,,,5*ds

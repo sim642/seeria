@@ -5,7 +5,7 @@ SeeriaNimi=Ahelreaktsioon
 ; m = kys_nr, "kysimus", "tahis", "yhik", exp, tyvenr, valem
 N = ,\iN\i  =,\iN,,-1,,#3
 m = ,\im\i  =,\im,g,,1,#4
-tar = ,\itariif,\itariif,€/kWh,-1,,0.05
+tar = ,\itariif,\itariif,€/kWh,,,0.05
 
 A0 = 1,Nukleonide arv lõhustuvas tuumas,\iA\a0,,-1,,#5
 Z0 = 2,Prootonite arv lõhustuvas tuumas,\iZ\a0,,-1,,#6
