@@ -205,8 +205,11 @@ function loadVariant(variant) {
 	var variantStr = variant;
 	if (variant != 'Valemid')
 		variantStr = (parseInt(variant, 10) + 1).toString();
-	
-	_gaq.push(['_trackEvent', 'Ylesanne', $('#nimi option:selected').text(), variantStr]);
+
+	gtag('event', 'Ylesanne', {
+		'nimi': $('#nimi option:selected').text(),
+		'variant': variantStr
+	});
 	
 	$('#steps').html('');
 	$('#steps').append($('<li></li>').attr('data-role', 'list-divider').text('Algandmed'));
